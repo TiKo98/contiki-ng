@@ -1,42 +1,3 @@
-/*
- * Copyright (c) 2021, Kiel University.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- * 3. Neither the name of the Institute nor the names of its contributors
- *    may be used to endorse or promote products derived from this software
- *    without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE INSTITUTE AND CONTRIBUTORS ``AS IS'' AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE
- * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
- * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
- * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
- * SUCH DAMAGE.
- *
- * This file is part of the Contiki operating system.
- *
- */
-
-/**
- * \file
- *         A MAC protocol that behaves as a transparent layer.
- * \author
- *         Oliver Harms <oha@informatik.uni-kiel.de>
- */
-
 #include "net/mac/transparentmac/transparentmac.h"
 #include "net/mac/mac-sequence.h"
 #include "net/packetbuf.h"
@@ -51,6 +12,8 @@
 
 /* Constants of the IEEE 802.15.4 standard */
 //TODO: use macros below for exponential backoff
+
+#define SLOT_WIDTH_IN_RTIMER_TICKS RTIMER_SECOND / 20
 
 /* macMinBE: Initial backoff exponent. Range 0--TMAC_MAX_BE */
 #ifdef TMAC_CONF_MIN_BE
@@ -68,34 +31,66 @@
 
 
 /*---------------------------------------------------------------------------*/
-static void
-send_packet(mac_callback_t sent, void *ptr)
+
+static void transmitPacket(mac_callback_t sent, void *ptr);
+
+static int current_backoff_exponent = TMAC_MIN_BE;
+
+static void 
+incrementBackoffExponent()
 {
-  static uint8_t initialized = 0;
-  static uint8_t seqno;
+  if (current_backoff_exponent < TMAC_MAX_BE) {
+    current_backoff_exponent += 1;
+  }
+}
+
+static void 
+sendPacketAtNextSlot(mac_callback_t sent, void *ptr)
+{
+  LOG_INFO("Send packet at next slot\n");
+  unsigned numTicksInCurrentSlot = RTIMER_NOW() % SLOT_WIDTH_IN_RTIMER_TICKS;
+  unsigned numTicksUntilNextSlot = SLOT_WIDTH_IN_RTIMER_TICKS - numTicksInCurrentSlot;
+
+  if (NETSTACK_RADIO.pending_packet()) {
+    LOG_INFO("Waiting for pending packet\n");
+    RTIMER_BUSYWAIT_UNTIL(!NETSTACK_RADIO.pending_packet(), RTIMER_SECOND * 5);
+    LOG_INFO("No pending packet in pipeline any more or 5 seconds passed\n");
+  }
+  
+
+  if (numTicksUntilNextSlot > 0) {
+    RTIMER_BUSYWAIT(numTicksUntilNextSlot);
+    LOG_INFO("Slot reached. Send now\n");
+  } else {
+    LOG_ERR("WTF");
+  }
+
+  transmitPacket(sent, ptr);
+}
+
+static void
+backoffTransmitPacket(mac_callback_t sent, void *ptr)
+{
+  unsigned numSlotsToBackoff = 1 << current_backoff_exponent;
+  unsigned numTicksForExponentialBackoff = SLOT_WIDTH_IN_RTIMER_TICKS * numSlotsToBackoff;
+  
+  if (numTicksForExponentialBackoff > 0) {
+    LOG_INFO("Backoff for %d slots!\n", numSlotsToBackoff);
+    RTIMER_BUSYWAIT(numTicksForExponentialBackoff);
+    LOG_INFO("Backoff completed. Send now\n");
+  } else {
+    LOG_ERR("WTF");
+  }
+
+  sendPacketAtNextSlot(sent, ptr);
+}
+
+static void
+transmitPacket(mac_callback_t sent, void *ptr) 
+{
   int hdr_len;
   int ret;
 
-  if(!initialized) {
-    initialized = 1;
-    /* Initialize the sequence number to a random value as per 802.15.4. */
-    seqno = random_rand();
-  }
-
-  if(seqno == 0) {
-    /* PACKETBUF_ATTR_MAC_SEQNO cannot be zero, due to a pecuilarity
-       in framer-802154.c. */
-    seqno++;
-  }
-  packetbuf_set_attr(PACKETBUF_ATTR_MAC_SEQNO, seqno++);
-  packetbuf_set_attr(PACKETBUF_ATTR_FRAME_TYPE, FRAME802154_DATAFRAME);
-
-  packetbuf_set_addr(PACKETBUF_ADDR_SENDER, &linkaddr_node_addr);
-  packetbuf_set_attr(PACKETBUF_ATTR_MAC_ACK, 1);
-
-  /* TODO: Schedule transmission and end send_packet function */
-  
-  /* TODO: execute scheduled transmission in new transmit funtion with code below */
 
   hdr_len = NETSTACK_FRAMER.create();
   if(hdr_len < 0) {
@@ -117,6 +112,10 @@ send_packet(mac_callback_t sent, void *ptr)
          already received a packet that needs to be read before
          sending with auto ack. */
       ret = MAC_TX_COLLISION;
+      
+      LOG_INFO("Currently receiving a packet over air or the radio has already received a packet that needs to be read before sending with auto ack.\n");
+      incrementBackoffExponent();
+      backoffTransmitPacket(sent, ptr);
     } else {
       switch(NETSTACK_RADIO.transmit(packetbuf_totlen())) {
       case RADIO_TX_OK:
@@ -146,6 +145,9 @@ send_packet(mac_callback_t sent, void *ptr)
                 /* Not an ack or ack not for us: collision */
                 ret = MAC_TX_COLLISION;
                  //TODO: retry sending after backoff period
+                LOG_INFO("A collision occured. Send again.");
+                incrementBackoffExponent();
+                backoffTransmitPacket(sent, ptr);
               }
             }
           }
@@ -154,6 +156,9 @@ send_packet(mac_callback_t sent, void *ptr)
       case RADIO_TX_COLLISION:
         ret = MAC_TX_COLLISION;
         //TODO: retry sending after backoff period
+        LOG_INFO("A collision occured. Send again.");
+        incrementBackoffExponent();
+        backoffTransmitPacket(sent, ptr);
         break;
       default:
         ret = MAC_TX_ERR;
@@ -161,8 +166,40 @@ send_packet(mac_callback_t sent, void *ptr)
       }
     }
   }
+  current_backoff_exponent = TMAC_MIN_BE;
   mac_call_sent_callback(sent, ptr, ret, 1);
 }
+
+
+static void
+send_packet(mac_callback_t sent, void *ptr)
+{
+  static uint8_t initialized = 0;
+  static uint8_t seqno;
+
+
+  if(!initialized) {
+    initialized = 1;
+    /* Initialize the sequence number to a random value as per 802.15.4. */
+    seqno = random_rand();
+  }
+
+  if(seqno == 0) {
+    /* PACKETBUF_ATTR_MAC_SEQNO cannot be zero, due to a pecuilarity
+       in framer-802154.c. */
+    seqno++;
+  }
+  packetbuf_set_attr(PACKETBUF_ATTR_MAC_SEQNO, seqno++);
+  packetbuf_set_attr(PACKETBUF_ATTR_FRAME_TYPE, FRAME802154_DATAFRAME);
+
+  packetbuf_set_addr(PACKETBUF_ADDR_SENDER, &linkaddr_node_addr);
+  packetbuf_set_attr(PACKETBUF_ATTR_MAC_ACK, 1);
+
+  sendPacketAtNextSlot(sent, ptr);
+}
+
+
+
 /*---------------------------------------------------------------------------*/
 static void
 input_packet(void)
@@ -172,6 +209,8 @@ input_packet(void)
 #endif
 
   int hdr_len;
+
+  LOG_INFO("Starting to parse an input packet\n");
 
   hdr_len = NETSTACK_FRAMER.parse();
   if(hdr_len < 0) {
@@ -209,7 +248,7 @@ input_packet(void)
     }
 #endif /* TMAC_SEND_SOFT_ACK */
     if(!duplicate) {
-      LOG_INFO("received packet from ");
+      LOG_INFO("I received a packet from ");
       LOG_INFO_LLADDR(packetbuf_addr(PACKETBUF_ADDR_SENDER));
       LOG_INFO_(", seqno %u, len %u\n", packetbuf_attr(PACKETBUF_ATTR_MAC_SEQNO), packetbuf_datalen());
       NETSTACK_NETWORK.input();

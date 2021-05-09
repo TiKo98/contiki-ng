@@ -74,6 +74,8 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
     LOG_INFO_("\n");
 
     NETSTACK_NETWORK.output(&dest_addr);
+  } else {
+    LOG_INFO("I am the master node!!\n");
   }
 
   PROCESS_END();
