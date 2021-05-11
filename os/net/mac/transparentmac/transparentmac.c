@@ -38,6 +38,9 @@ static void transmitPacket(mac_callback_t sent, void *ptr);
 
 static int current_backoff_exponent = TMAC_MIN_BE;
 
+static int successCounter = 0;
+static int failureCounter = 0;
+
 static void 
 incrementBackoffExponent()
 {
@@ -99,15 +102,6 @@ transmitPacket(mac_callback_t sent, void *ptr)
          already received a packet that needs to be read before
          sending with auto ack. */
       ret = MAC_TX_COLLISION;
-
-      if (NETSTACK_RADIO.receiving_packet()) {
-        LOG_INFO("Currently receiving a packet over air\n");
-      } else {
-        LOG_INFO("The radio has already received a packet that needs to be read before sending with auto ack.\n");
-      }
-      // incrementBackoffExponent();
-      // backoffTransmitPacket(sent, ptr);
-      // return;
     } else {
       switch(NETSTACK_RADIO.transmit(packetbuf_totlen())) {
       case RADIO_TX_OK:
@@ -140,8 +134,8 @@ transmitPacket(mac_callback_t sent, void *ptr)
                 ret = MAC_TX_COLLISION;
                  //TODO: retry sending after backoff period
                 LOG_INFO("A collision occured. Send again.");
-                incrementBackoffExponent();
                 backoffTransmitPacket(sent, ptr);
+                incrementBackoffExponent();
               }
             }
           }
@@ -151,8 +145,8 @@ transmitPacket(mac_callback_t sent, void *ptr)
         ret = MAC_TX_COLLISION;
         //TODO: retry sending after backoff period
         LOG_INFO("A collision occured. Send again.");
-        incrementBackoffExponent();
         backoffTransmitPacket(sent, ptr);
+        incrementBackoffExponent();
       default:
         LOG_ERR("MAC_TX_ERR\n");
         ret = MAC_TX_ERR;
@@ -161,7 +155,12 @@ transmitPacket(mac_callback_t sent, void *ptr)
     }
   }
   current_backoff_exponent = TMAC_MIN_BE;
-  LOG_INFO("Call sent callback \n");
+  if (ret == MAC_TX_OK) {
+    successCounter += 1;
+  } else {
+    failureCounter += 1;
+  }
+  LOG_INFO("%d successes and %d failures\n", successCounter, failureCounter);
   mac_call_sent_callback(sent, ptr, ret, 1);
 }
 

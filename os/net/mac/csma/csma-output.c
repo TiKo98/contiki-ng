@@ -165,6 +165,10 @@ backoff_period(void)
 #endif /* CONTIKI_TARGET_COOJA */
 }
 /*---------------------------------------------------------------------------*/
+
+static int successCounter = 0;
+static int failureCounter = 0;
+
 static int
 send_one_packet(struct neighbor_queue *n, struct packet_queue *q)
 {
@@ -247,7 +251,12 @@ send_one_packet(struct neighbor_queue *n, struct packet_queue *q)
   }
   if(ret == MAC_TX_OK) {
     last_sent_ok = 1;
+    successCounter += 1;
+  } else {
+    failureCounter += 1;
   }
+
+  LOG_INFO("%d successes and %d failures\n", successCounter, failureCounter);
 
   packet_sent(n, q, ret, 1);
   return last_sent_ok;
