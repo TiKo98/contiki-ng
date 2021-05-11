@@ -1,3 +1,4 @@
+#include "sys/ctimer.h"
 #include "net/mac/transparentmac/transparentmac.h"
 #include "net/mac/mac-sequence.h"
 #include "net/packetbuf.h"
@@ -14,6 +15,7 @@
 //TODO: use macros below for exponential backoff
 
 #define SLOT_WIDTH_IN_RTIMER_TICKS RTIMER_SECOND / 20
+#define SLOT_WIDTH_IN_CTIMER_TICKS CLOCK_SECOND / 20
 
 /* macMinBE: Initial backoff exponent. Range 0--TMAC_MAX_BE */
 #ifdef TMAC_CONF_MIN_BE
@@ -47,23 +49,13 @@ incrementBackoffExponent()
 static void 
 sendPacketAtNextSlot(mac_callback_t sent, void *ptr)
 {
+
   LOG_INFO("Send packet at next slot\n");
   unsigned numTicksInCurrentSlot = RTIMER_NOW() % SLOT_WIDTH_IN_RTIMER_TICKS;
   unsigned numTicksUntilNextSlot = SLOT_WIDTH_IN_RTIMER_TICKS - numTicksInCurrentSlot;
 
-  if (NETSTACK_RADIO.pending_packet()) {
-    LOG_INFO("Waiting for pending packet\n");
-    RTIMER_BUSYWAIT_UNTIL(!NETSTACK_RADIO.pending_packet(), RTIMER_SECOND * 5);
-    LOG_INFO("No pending packet in pipeline any more or 5 seconds passed\n");
-  }
-  
-
-  if (numTicksUntilNextSlot > 0) {
-    RTIMER_BUSYWAIT(numTicksUntilNextSlot);
-    LOG_INFO("Slot reached. Send now\n");
-  } else {
-    LOG_ERR("WTF");
-  }
+  RTIMER_BUSYWAIT(numTicksUntilNextSlot);
+  LOG_INFO("Slot reached. Send now\n");
 
   transmitPacket(sent, ptr);
 }
@@ -74,14 +66,8 @@ backoffTransmitPacket(mac_callback_t sent, void *ptr)
   unsigned numSlotsToBackoff = 1 << current_backoff_exponent;
   unsigned numTicksForExponentialBackoff = SLOT_WIDTH_IN_RTIMER_TICKS * numSlotsToBackoff;
   
-  if (numTicksForExponentialBackoff > 0) {
-    LOG_INFO("Backoff for %d slots!\n", numSlotsToBackoff);
-    RTIMER_BUSYWAIT(numTicksForExponentialBackoff);
-    LOG_INFO("Backoff completed. Send now\n");
-  } else {
-    LOG_ERR("WTF");
-  }
-
+  LOG_INFO("Backoff for %d slots which is %d ticks!\n", numSlotsToBackoff, numTicksForExponentialBackoff);
+  RTIMER_BUSYWAIT(numTicksForExponentialBackoff);
   sendPacketAtNextSlot(sent, ptr);
 }
 
@@ -91,6 +77,7 @@ transmitPacket(mac_callback_t sent, void *ptr)
   int hdr_len;
   int ret;
 
+  LOG_INFO("Try transmitting\n");
 
   hdr_len = NETSTACK_FRAMER.create();
   if(hdr_len < 0) {
@@ -112,17 +99,24 @@ transmitPacket(mac_callback_t sent, void *ptr)
          already received a packet that needs to be read before
          sending with auto ack. */
       ret = MAC_TX_COLLISION;
-      
-      LOG_INFO("Currently receiving a packet over air or the radio has already received a packet that needs to be read before sending with auto ack.\n");
-      incrementBackoffExponent();
-      backoffTransmitPacket(sent, ptr);
+
+      if (NETSTACK_RADIO.receiving_packet()) {
+        LOG_INFO("Currently receiving a packet over air\n");
+      } else {
+        LOG_INFO("The radio has already received a packet that needs to be read before sending with auto ack.\n");
+      }
+      // incrementBackoffExponent();
+      // backoffTransmitPacket(sent, ptr);
+      // return;
     } else {
       switch(NETSTACK_RADIO.transmit(packetbuf_totlen())) {
       case RADIO_TX_OK:
         if(is_broadcast) {
+          LOG_INFO("Is Broadcast. Return\n");
           ret = MAC_TX_OK;
         } else {
           /* Check for ack */
+          LOG_INFO("MAC_TX_OK. Waiting for ack\n");
 
           /* Wait for max TMAC_ACK_WAIT_TIME */
           RTIMER_BUSYWAIT_UNTIL(NETSTACK_RADIO.pending_packet(), TMAC_ACK_WAIT_TIME);
@@ -159,14 +153,15 @@ transmitPacket(mac_callback_t sent, void *ptr)
         LOG_INFO("A collision occured. Send again.");
         incrementBackoffExponent();
         backoffTransmitPacket(sent, ptr);
-        break;
       default:
+        LOG_ERR("MAC_TX_ERR\n");
         ret = MAC_TX_ERR;
         break;
       }
     }
   }
   current_backoff_exponent = TMAC_MIN_BE;
+  LOG_INFO("Call sent callback \n");
   mac_call_sent_callback(sent, ptr, ret, 1);
 }
 
@@ -194,6 +189,8 @@ send_packet(mac_callback_t sent, void *ptr)
 
   packetbuf_set_addr(PACKETBUF_ADDR_SENDER, &linkaddr_node_addr);
   packetbuf_set_attr(PACKETBUF_ATTR_MAC_ACK, 1);
+
+
 
   sendPacketAtNextSlot(sent, ptr);
 }
