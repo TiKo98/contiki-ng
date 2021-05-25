@@ -62,10 +62,13 @@ void input_callback(const void *data, uint16_t len,
       // Toggle LED
       if (payload.ledId == 0) {
         leds_toggle(LEDS_RED);
+        LOG_INFO("Toggle red led in round %u\n", payload.counter);
       } else if (payload.ledId == 1) {
         leds_toggle(LEDS_GREEN);
+        LOG_INFO("Toggle green led in round %u\n", payload.counter);
       } else if (payload.ledId == 2) {
         leds_toggle(LEDS_YELLOW);
+        LOG_INFO("Toggle yellow led in round %u\n", payload.counter);
       }
     }
   }
