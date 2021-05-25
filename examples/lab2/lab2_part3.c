@@ -19,6 +19,7 @@
 
 /* Configuration */
 #define SEND_INTERVAL (5 * CLOCK_SECOND)
+#define CENTRAL_NODE_ID 13
 
 
 /*---------------------------------------------------------------------------*/
@@ -54,22 +55,22 @@ void input_callback(const void *data, uint16_t len,
         
         if (payloadReceived.value < numHopsToCentralNode) {
           LOG_INFO_LLADDR(src);
-          LOG_INFO(" is %u hops away from central node. ", payloadReceived.value);
+          // LOG_INFO(" is %u hops away from central node. ", payloadReceived.value);
           numHopsToCentralNode = payloadReceived.value + 1;
           parentNodeAddress = *src;
-          LOG_INFO("Take it as parent node! \n");
+          // LOG_INFO("Take it as parent node! \n");
         } 
     }
 
     if (payloadReceived.type == 1) {
-      if (node_id == 13) {
+      if (node_id == CENTRAL_NODE_ID) {
         if (payloadReceived.roundCounter > currentRound) {
           currentRound = payloadReceived.roundCounter;
           numMessagesRecievedInCurrentRound = 0;
           LOG_INFO("Reset numMessagesRecievedInCurrentRound\n");
         }
         numMessagesRecievedInCurrentRound++;
-        LOG_INFO("Received sensor value %u from round %u\n", payloadReceived.value, payloadReceived.roundCounter);
+        LOG_INFO("Received sensor value %u from origin %u in round %u\n", payloadReceived.value, payloadReceived.origin, payloadReceived.roundCounter);
         LOG_INFO("Thus received %u values in this round\n", numMessagesRecievedInCurrentRound);
       } else if (numHopsToCentralNode < 9999) {
         memcpy(nullnet_buf, &payloadReceived, sizeof(struct Payload));
@@ -91,7 +92,7 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
 
   PROCESS_BEGIN();
   
-  if (node_id == 13) {
+  if (node_id == CENTRAL_NODE_ID) {
     numHopsToCentralNode = 0;
   }
 
@@ -114,7 +115,7 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
       memcpy(nullnet_buf, &payload, sizeof(struct Payload));
       nullnet_len = sizeof(struct Payload);
 
-      LOG_INFO("Broadcast beacon %u \n", numHopsToCentralNode);
+      // LOG_INFO("Broadcast beacon %u \n", numHopsToCentralNode);
       NETSTACK_NETWORK.output(NULL);
     }
     
@@ -123,7 +124,7 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
 
     unsigned sensorValue = random_rand() % 100;    
 
-    if (numHopsToCentralNode < 9999 && node_id != 13) {
+    if (numHopsToCentralNode < 9999 && node_id != CENTRAL_NODE_ID) {
       payload.type = 1;
       payload.value = sensorValue;
       payload.roundCounter = roundCounter;

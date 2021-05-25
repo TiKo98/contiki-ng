@@ -1,0 +1,1379 @@
+00:00.287	ID:7	[INFO: Main      ] Starting Contiki-NG-release/v4.6-3-g89dd2757f-dirty
+00:00.287	ID:2	[INFO: Main      ] Starting Contiki-NG-release/v4.6-3-g89dd2757f-dirty
+00:00.287	ID:8	[INFO: Main      ] Starting Contiki-NG-release/v4.6-3-g89dd2757f-dirty
+00:00.287	ID:6	[INFO: Main      ] Starting Contiki-NG-release/v4.6-3-g89dd2757f-dirty
+00:00.287	ID:4	[INFO: Main      ] Starting Contiki-NG-release/v4.6-3-g89dd2757f-dirty
+00:00.287	ID:9	[INFO: Main      ] Starting Contiki-NG-release/v4.6-3-g89dd2757f-dirty
+00:00.287	ID:1	[INFO: Main      ] Starting Contiki-NG-release/v4.6-3-g89dd2757f-dirty
+00:00.287	ID:3	[INFO: Main      ] Starting Contiki-NG-release/v4.6-3-g89dd2757f-dirty
+00:00.287	ID:5	[INFO: Main      ] Starting Contiki-NG-release/v4.6-3-g89dd2757f-dirty
+00:00.290	ID:7	[INFO: Main      ] - Routing: nullrouting
+00:00.290	ID:2	[INFO: Main      ] - Routing: nullrouting
+00:00.290	ID:8	[INFO: Main      ] - Routing: nullrouting
+00:00.290	ID:6	[INFO: Main      ] - Routing: nullrouting
+00:00.290	ID:4	[INFO: Main      ] - Routing: nullrouting
+00:00.290	ID:9	[INFO: Main      ] - Routing: nullrouting
+00:00.290	ID:1	[INFO: Main      ] - Routing: nullrouting
+00:00.290	ID:3	[INFO: Main      ] - Routing: nullrouting
+00:00.290	ID:5	[INFO: Main      ] - Routing: nullrouting
+00:00.292	ID:7	[INFO: Main      ] - Net: nullnet
+00:00.292	ID:2	[INFO: Main      ] - Net: nullnet
+00:00.292	ID:8	[INFO: Main      ] - Net: nullnet
+00:00.292	ID:6	[INFO: Main      ] - Net: nullnet
+00:00.292	ID:4	[INFO: Main      ] - Net: nullnet
+00:00.292	ID:9	[INFO: Main      ] - Net: nullnet
+00:00.292	ID:1	[INFO: Main      ] - Net: nullnet
+00:00.292	ID:3	[INFO: Main      ] - Net: nullnet
+00:00.292	ID:5	[INFO: Main      ] - Net: nullnet
+00:00.294	ID:7	[INFO: Main      ] - MAC: CSMA
+00:00.294	ID:2	[INFO: Main      ] - MAC: CSMA
+00:00.294	ID:8	[INFO: Main      ] - MAC: CSMA
+00:00.294	ID:6	[INFO: Main      ] - MAC: CSMA
+00:00.294	ID:4	[INFO: Main      ] - MAC: CSMA
+00:00.294	ID:9	[INFO: Main      ] - MAC: CSMA
+00:00.294	ID:1	[INFO: Main      ] - MAC: CSMA
+00:00.294	ID:3	[INFO: Main      ] - MAC: CSMA
+00:00.294	ID:5	[INFO: Main      ] - MAC: CSMA
+00:00.298	ID:7	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.298	ID:2	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.298	ID:8	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.298	ID:6	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.298	ID:4	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.298	ID:9	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.298	ID:1	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.298	ID:3	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.298	ID:5	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.301	ID:7	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.301	ID:2	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.301	ID:8	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.301	ID:6	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.301	ID:4	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.301	ID:9	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.301	ID:1	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.301	ID:3	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.301	ID:5	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.303	ID:7	[INFO: Main      ] Node ID: 7
+00:00.303	ID:2	[INFO: Main      ] Node ID: 2
+00:00.303	ID:8	[INFO: Main      ] Node ID: 8
+00:00.303	ID:6	[INFO: Main      ] Node ID: 6
+00:00.303	ID:4	[INFO: Main      ] Node ID: 4
+00:00.303	ID:9	[INFO: Main      ] Node ID: 9
+00:00.303	ID:1	[INFO: Main      ] Node ID: 1
+00:00.303	ID:3	[INFO: Main      ] Node ID: 3
+00:00.303	ID:5	[INFO: Main      ] Node ID: 5
+00:00.309	ID:7	[INFO: Main      ] Link-layer address: 0707.0700.0774.1200
+00:00.309	ID:2	[INFO: Main      ] Link-layer address: 0202.0200.0274.1200
+00:00.309	ID:6	[INFO: Main      ] Link-layer address: 0606.0600.0674.1200
+00:00.309	ID:8	[INFO: Main      ] Link-layer address: 0808.0800.0874.1200
+00:00.309	ID:4	[INFO: Main      ] Link-layer address: 0404.0400.0474.1200
+00:00.309	ID:9	[INFO: Main      ] Link-layer address: 0909.0900.0974.1200
+00:00.309	ID:1	[INFO: Main      ] Link-layer address: 0101.0100.0174.1200
+00:00.309	ID:3	[INFO: Main      ] Link-layer address: 0303.0300.0374.1200
+00:00.309	ID:5	[INFO: Main      ] Link-layer address: 0505.0500.0574.1200
+00:00.312	ID:7	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.312	ID:2	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.312	ID:6	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.312	ID:8	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.312	ID:4	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.312	ID:9	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.312	ID:1	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.312	ID:3	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.312	ID:5	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.316	ID:5	[INFO: App       ] numHopsToCentralNode: 0 
+00:00.316	ID:7	[INFO: App       ] numHopsToCentralNode: 9999 
+00:00.316	ID:2	[INFO: App       ] numHopsToCentralNode: 9999 
+00:00.316	ID:6	[INFO: App       ] numHopsToCentralNode: 9999 
+00:00.316	ID:8	[INFO: App       ] numHopsToCentralNode: 9999 
+00:00.316	ID:4	[INFO: App       ] numHopsToCentralNode: 9999 
+00:00.316	ID:9	[INFO: App       ] numHopsToCentralNode: 9999 
+00:00.316	ID:1	[INFO: App       ] numHopsToCentralNode: 9999 
+00:00.316	ID:3	[INFO: App       ] numHopsToCentralNode: 9999 
+00:05.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 45 in round 0 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:05.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 45 in round 0 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:05.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 45 in round 0 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:05.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 45 in round 0 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:05.338	ID:5	[INFO: App       ] Received sensor value 45 from origin 6 in round 0
+00:05.342	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:05.372	ID:5	[INFO: App       ] Received sensor value 45 from origin 8 in round 0
+00:05.376	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:05.459	ID:5	[INFO: App       ] Received sensor value 45 from origin 3 in round 0
+00:05.463	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:10.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 6 in round 1 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:10.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 6 in round 1 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:10.326	ID:3	[INFO: App       ] Sent sensor value 1 in round 1 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:10.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 39 in round 1 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:10.326	ID:1	0404.0400.0474.12000505.0500.0574.1200[INFO: App       ] Sent sensor value 58 in round 1 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:10.326	ID:2	0404.0400.0474.12000505.0500.0574.1200[INFO: App       ] Sent sensor value 58 in round 1 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:10.326	ID:9	0808.0800.0874.12000505.0500.0574.1200[INFO: App       ] Sent sensor value 58 in round 1 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:10.363	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:10.368	ID:5	[INFO: App       ] Received sensor value 39 from origin 8 in round 1
+00:10.372	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:10.384	ID:5	[INFO: App       ] Received sensor value 6 from origin 6 in round 1
+00:10.388	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:10.396	ID:5	[INFO: App       ] Received sensor value 1 from origin 3 in round 1
+00:10.400	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:10.408	ID:5	[INFO: App       ] Received sensor value 58 from origin 1 in round 1
+00:10.412	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:10.435	ID:5	[INFO: App       ] Received sensor value 58 from origin 2 in round 1
+00:10.439	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:15.326	ID:2	[INFO: App       ] Sent sensor value 1 in round 2 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:15.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 1 in round 2 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:15.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 1 in round 2 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:15.326	ID:7	0404.0400.0474.12000505.0500.0574.1200[INFO: App       ] Sent sensor value 7 in round 2 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:15.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 16 in round 2 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:15.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 50 in round 2 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:15.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 72 in round 2 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:15.326	ID:3	[INFO: App       ] Sent sensor value 39 in round 2 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:15.340	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:15.345	ID:5	[INFO: App       ] Received sensor value 1 from origin 2 in round 2
+00:15.349	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:15.356	ID:5	[INFO: App       ] Received sensor value 1 from origin 6 in round 2
+00:15.360	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:15.367	ID:5	[INFO: App       ] Received sensor value 72 from origin 8 in round 2
+00:15.371	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:15.384	ID:5	[INFO: App       ] Received sensor value 16 from origin 1 in round 2
+00:15.388	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:15.412	ID:5	[INFO: App       ] Received sensor value 50 from origin 9 in round 2
+00:15.416	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:15.469	ID:5	[INFO: App       ] Received sensor value 7 from origin 7 in round 2
+00:15.473	ID:5	[INFO: App       ] Thus received 6 values in this round
+00:15.560	ID:5	[INFO: App       ] Received sensor value 39 from origin 3 in round 2
+00:15.564	ID:5	[INFO: App       ] Thus received 7 values in this round
+00:20.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 97 in round 3 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:20.326	ID:8	[INFO: App       ] Sent sensor value 39 in round 3 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:20.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 73 in round 3 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:20.326	ID:1	[INFO: App       ] Sent sensor value 73 in round 3 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:20.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 73 in round 3 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:20.326	ID:9	[INFO: App       ] Sent sensor value 28 in round 3 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:20.326	ID:7	[INFO: App       ] Sent sensor value 73 in round 3 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:20.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 72 in round 3 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:20.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:20.341	ID:5	[INFO: App       ] Received sensor value 73 from origin 6 in round 3
+00:20.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:20.356	ID:5	[INFO: App       ] Received sensor value 28 from origin 9 in round 3
+00:20.360	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:20.380	ID:5	[INFO: App       ] Received sensor value 72 from origin 2 in round 3
+00:20.384	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:20.391	ID:5	[INFO: App       ] Received sensor value 97 from origin 3 in round 3
+00:20.395	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:20.402	ID:5	[INFO: App       ] Received sensor value 73 from origin 1 in round 3
+00:20.406	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:20.413	ID:5	[INFO: App       ] Received sensor value 39 from origin 8 in round 3
+00:20.417	ID:5	[INFO: App       ] Thus received 6 values in this round
+00:20.427	ID:5	[INFO: App       ] Received sensor value 73 from origin 7 in round 3
+00:20.431	ID:5	[INFO: App       ] Thus received 7 values in this round
+00:25.326	ID:8	[INFO: App       ] Sent sensor value 84 in round 4 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:25.326	ID:7	[INFO: App       ] Sent sensor value 48 in round 4 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:25.326	ID:2	[INFO: App       ] Sent sensor value 28 in round 4 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:25.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 28 in round 4 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:25.326	ID:9	[INFO: App       ] Sent sensor value 95 in round 4 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:25.326	ID:1	[INFO: App       ] Sent sensor value 48 in round 4 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:25.326	ID:6	[INFO: App       ] Sent sensor value 28 in round 4 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:25.326	ID:3	[INFO: App       ] Sent sensor value 61 in round 4 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:25.340	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:25.345	ID:5	[INFO: App       ] Received sensor value 48 from origin 7 in round 4
+00:25.348	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:25.357	ID:5	[INFO: App       ] Received sensor value 28 from origin 6 in round 4
+00:25.361	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:25.368	ID:5	[INFO: App       ] Received sensor value 28 from origin 2 in round 4
+00:25.372	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:25.380	ID:5	[INFO: App       ] Received sensor value 84 from origin 8 in round 4
+00:25.384	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:25.443	ID:5	[INFO: App       ] Received sensor value 95 from origin 9 in round 4
+00:25.447	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:25.453	ID:5	[INFO: App       ] Received sensor value 48 from origin 7 in round 4
+00:25.457	ID:5	[INFO: App       ] Thus received 6 values in this round
+00:25.521	ID:5	[INFO: App       ] Received sensor value 61 from origin 3 in round 4
+00:25.525	ID:5	[INFO: App       ] Thus received 7 values in this round
+00:25.622	ID:5	[INFO: App       ] Received sensor value 48 from origin 1 in round 4
+00:25.626	ID:5	[INFO: App       ] Thus received 8 values in this round
+00:30.326	ID:1	[INFO: App       ] Sent sensor value 47 in round 5 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:30.326	ID:2	[INFO: App       ] Sent sensor value 84 in round 5 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:30.326	ID:8	[INFO: App       ] Sent sensor value 35 in round 5 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:30.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 95 in round 5 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:30.326	ID:9	[INFO: App       ] Sent sensor value 48 in round 5 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:30.326	ID:4	[INFO: App       ] Sent sensor value 95 in round 5 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:30.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 19 in round 5 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:30.326	ID:7	[INFO: App       ] Sent sensor value 98 in round 5 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:30.340	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:30.344	ID:5	[INFO: App       ] Received sensor value 47 from origin 1 in round 5
+00:30.348	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:30.357	ID:5	[INFO: App       ] Received sensor value 35 from origin 8 in round 5
+00:30.361	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:30.368	ID:5	[INFO: App       ] Received sensor value 95 from origin 6 in round 5
+00:30.372	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:30.396	ID:5	[INFO: App       ] Received sensor value 84 from origin 2 in round 5
+00:30.400	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:30.552	ID:5	[INFO: App       ] Received sensor value 19 from origin 3 in round 5
+00:30.556	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:35.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 10 in round 6 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:35.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 29 in round 6 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:35.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 57 in round 6 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:35.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 51 in round 6 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:35.326	ID:9	[INFO: App       ] Sent sensor value 51 in round 6 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:35.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 86 in round 6 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:35.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 35 in round 6 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:35.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 48 in round 6 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:35.355	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:35.360	ID:5	[INFO: App       ] Received sensor value 86 from origin 6 in round 6
+00:35.364	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:35.371	ID:5	[INFO: App       ] Received sensor value 48 from origin 2 in round 6
+00:35.375	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:35.382	ID:5	[INFO: App       ] Received sensor value 51 from origin 8 in round 6
+00:35.386	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:35.474	ID:5	[INFO: App       ] Received sensor value 57 from origin 7 in round 6
+00:35.478	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:35.485	ID:5	[INFO: App       ] Received sensor value 29 from origin 3 in round 6
+00:35.489	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:35.560	ID:5	[INFO: App       ] Received sensor value 10 from origin 1 in round 6
+00:35.564	ID:5	[INFO: App       ] Thus received 6 values in this round
+00:35.575	ID:5	[INFO: App       ] Received sensor value 51 from origin 9 in round 6
+00:35.579	ID:5	[INFO: App       ] Thus received 7 values in this round
+00:40.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 97 in round 7 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:40.326	ID:3	[INFO: App       ] Sent sensor value 43 in round 7 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:40.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 94 in round 7 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:40.326	ID:7	[INFO: App       ] Sent sensor value 71 in round 7 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:40.326	ID:1	[INFO: App       ] Sent sensor value 64 in round 7 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:40.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 61 in round 7 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:40.326	ID:8	[INFO: App       ] Sent sensor value 71 in round 7 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:40.326	ID:9	[INFO: App       ] Sent sensor value 37 in round 7 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:40.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:40.341	ID:5	[INFO: App       ] Received sensor value 94 from origin 4 in round 7
+00:40.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:40.356	ID:5	[INFO: App       ] Received sensor value 43 from origin 3 in round 7
+00:40.360	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:40.372	ID:5	[INFO: App       ] Received sensor value 71 from origin 8 in round 7
+00:40.375	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:40.382	ID:5	[INFO: App       ] Received sensor value 94 from origin 4 in round 7
+00:40.386	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:40.393	ID:5	[INFO: App       ] Received sensor value 64 from origin 1 in round 7
+00:40.397	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:40.404	ID:5	[INFO: App       ] Received sensor value 97 from origin 6 in round 7
+00:40.408	ID:5	[INFO: App       ] Thus received 6 values in this round
+00:40.415	ID:5	[INFO: App       ] Received sensor value 61 from origin 2 in round 7
+00:40.419	ID:5	[INFO: App       ] Thus received 7 values in this round
+00:40.426	ID:5	[INFO: App       ] Received sensor value 37 from origin 9 in round 7
+00:40.430	ID:5	[INFO: App       ] Thus received 8 values in this round
+00:40.450	ID:5	[INFO: App       ] Received sensor value 71 from origin 7 in round 7
+00:40.454	ID:5	[INFO: App       ] Thus received 9 values in this round
+00:45.326	ID:3	[INFO: App       ] Sent sensor value 8 in round 8 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:45.326	ID:9	[INFO: App       ] Sent sensor value 87 in round 8 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:45.326	ID:1	[INFO: App       ] Sent sensor value 86 in round 8 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:45.326	ID:2	[INFO: App       ] Sent sensor value 32 in round 8 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:45.326	ID:4	[INFO: App       ] Sent sensor value 53 in round 8 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:45.326	ID:7	[INFO: App       ] Sent sensor value 98 in round 8 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:45.326	ID:6	[INFO: App       ] Sent sensor value 58 in round 8 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:45.326	ID:8	[INFO: App       ] Sent sensor value 98 in round 8 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:45.335	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:45.340	ID:5	[INFO: App       ] Received sensor value 98 from origin 7 in round 8
+00:45.344	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:45.354	ID:5	[INFO: App       ] Received sensor value 53 from origin 4 in round 8
+00:45.358	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:45.396	ID:5	[INFO: App       ] Received sensor value 58 from origin 6 in round 8
+00:45.399	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:45.412	ID:5	[INFO: App       ] Received sensor value 98 from origin 8 in round 8
+00:45.416	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:45.434	ID:5	[INFO: App       ] Received sensor value 32 from origin 2 in round 8
+00:45.438	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:45.466	ID:5	[INFO: App       ] Received sensor value 87 from origin 9 in round 8
+00:45.470	ID:5	[INFO: App       ] Thus received 6 values in this round
+00:45.477	ID:5	[INFO: App       ] Received sensor value 8 from origin 3 in round 8
+00:45.481	ID:5	[INFO: App       ] Thus received 7 values in this round
+00:45.513	ID:5	[INFO: App       ] Received sensor value 86 from origin 1 in round 8
+00:45.517	ID:5	[INFO: App       ] Thus received 8 values in this round
+00:50.326	ID:3	[INFO: App       ] Sent sensor value 14 in round 9 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:50.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 10 in round 9 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:50.326	ID:9	[INFO: App       ] Sent sensor value 65 in round 9 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:50.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 86 in round 9 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:50.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 19 in round 9 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:50.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 98 in round 9 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:50.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 33 in round 9 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:50.326	ID:1	[INFO: App       ] Sent sensor value 64 in round 9 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:50.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:50.341	ID:5	[INFO: App       ] Received sensor value 10 from origin 2 in round 9
+00:50.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:50.351	ID:5	[INFO: App       ] Received sensor value 64 from origin 1 in round 9
+00:50.355	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:50.374	ID:5	[INFO: App       ] Received sensor value 19 from origin 8 in round 9
+00:50.378	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:50.387	ID:5	[INFO: App       ] Received sensor value 86 from origin 4 in round 9
+00:50.391	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:50.412	ID:5	[INFO: App       ] Received sensor value 98 from origin 6 in round 9
+00:50.415	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:50.422	ID:5	[INFO: App       ] Received sensor value 14 from origin 3 in round 9
+00:50.426	ID:5	[INFO: App       ] Thus received 6 values in this round
+00:55.326	ID:9	[INFO: App       ] Sent sensor value 8 in round 10 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:55.326	ID:3	[INFO: App       ] Sent sensor value 50 in round 10 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:55.326	ID:8	[INFO: App       ] Sent sensor value 10 in round 10 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:55.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 60 in round 10 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:55.326	ID:7	[INFO: App       ] Sent sensor value 35 in round 10 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:55.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 80 in round 10 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:55.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 56 in round 10 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:55.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 57 in round 10 to parent node 0505.0500.0574.1200[INFO: App       ] 
+00:55.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+00:55.341	ID:5	[INFO: App       ] Received sensor value 10 from origin 8 in round 10
+00:55.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+00:55.356	ID:5	[INFO: App       ] Received sensor value 50 from origin 3 in round 10
+00:55.360	ID:5	[INFO: App       ] Thus received 2 values in this round
+00:55.368	ID:5	[INFO: App       ] Received sensor value 57 from origin 2 in round 10
+00:55.372	ID:5	[INFO: App       ] Thus received 3 values in this round
+00:55.404	ID:5	[INFO: App       ] Received sensor value 8 from origin 9 in round 10
+00:55.407	ID:5	[INFO: App       ] Thus received 4 values in this round
+00:55.427	ID:5	[INFO: App       ] Received sensor value 80 from origin 6 in round 10
+00:55.431	ID:5	[INFO: App       ] Thus received 5 values in this round
+00:55.438	ID:5	[INFO: App       ] Received sensor value 60 from origin 1 in round 10
+00:55.442	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:00.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 16 in round 11 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:00.326	ID:9	[INFO: App       ] Sent sensor value 14 in round 11 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:00.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 50 in round 11 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:00.326	ID:7	[INFO: App       ] Sent sensor value 90 in round 11 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:00.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 29 in round 11 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:00.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 72 in round 11 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:00.326	ID:6	[INFO: App       ] Sent sensor value 10 in round 11 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:00.326	ID:8	[INFO: App       ] Sent sensor value 57 in round 11 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:00.358	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:00.363	ID:5	[INFO: App       ] Received sensor value 29 from origin 4 in round 11
+01:00.367	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:00.391	ID:5	[INFO: App       ] Received sensor value 57 from origin 8 in round 11
+01:00.395	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:00.403	ID:5	[INFO: App       ] Received sensor value 10 from origin 6 in round 11
+01:00.407	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:00.419	ID:5	[INFO: App       ] Received sensor value 50 from origin 1 in round 11
+01:00.423	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:00.447	ID:5	[INFO: App       ] Received sensor value 90 from origin 7 in round 11
+01:00.451	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:05.326	ID:1	[INFO: App       ] Sent sensor value 16 in round 12 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:05.326	ID:3	[INFO: App       ] Sent sensor value 94 in round 12 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:05.326	ID:6	[INFO: App       ] Sent sensor value 42 in round 12 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:05.326	ID:7	[INFO: App       ] Sent sensor value 68 in round 12 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:05.326	ID:8	[INFO: App       ] Sent sensor value 72 in round 12 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:05.326	ID:4	[INFO: App       ] Sent sensor value 64 in round 12 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:05.326	ID:2	[INFO: App       ] Sent sensor value 71 in round 12 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:05.326	ID:9	[INFO: App       ] Sent sensor value 64 in round 12 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:05.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:05.341	ID:5	[INFO: App       ] Received sensor value 64 from origin 4 in round 12
+01:05.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:05.388	ID:5	[INFO: App       ] Received sensor value 42 from origin 6 in round 12
+01:05.392	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:05.399	ID:5	[INFO: App       ] Received sensor value 94 from origin 3 in round 12
+01:05.403	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:05.427	ID:5	[INFO: App       ] Received sensor value 71 from origin 2 in round 12
+01:05.431	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:05.443	ID:5	[INFO: App       ] Received sensor value 64 from origin 9 in round 12
+01:05.447	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:05.474	ID:5	[INFO: App       ] Received sensor value 68 from origin 7 in round 12
+01:05.478	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:10.326	ID:7	[INFO: App       ] Sent sensor value 6 in round 13 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:10.326	ID:4	[INFO: App       ] Sent sensor value 40 in round 13 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:10.326	ID:2	[INFO: App       ] Sent sensor value 40 in round 13 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:10.326	ID:1	[INFO: App       ] Sent sensor value 94 in round 13 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:10.326	ID:8	[INFO: App       ] Sent sensor value 71 in round 13 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:10.326	ID:6	[INFO: App       ] Sent sensor value 29 in round 13 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:10.326	ID:3	[INFO: App       ] Sent sensor value 20 in round 13 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:10.326	ID:9	[INFO: App       ] Sent sensor value 32 in round 13 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:10.338	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:10.343	ID:5	[INFO: App       ] Received sensor value 32 from origin 9 in round 13
+01:10.347	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:10.355	ID:5	[INFO: App       ] Received sensor value 29 from origin 6 in round 13
+01:10.358	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:10.380	ID:5	[INFO: App       ] Received sensor value 20 from origin 3 in round 13
+01:10.384	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:10.465	ID:5	[INFO: App       ] Received sensor value 71 from origin 8 in round 13
+01:10.469	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:10.476	ID:5	[INFO: App       ] Received sensor value 6 from origin 7 in round 13
+01:10.480	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:10.490	ID:5	[INFO: App       ] Received sensor value 94 from origin 1 in round 13
+01:10.494	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:15.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 7 in round 14 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:15.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 83 in round 14 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:15.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 65 in round 14 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:15.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 86 in round 14 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:15.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 51 in round 14 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:15.326	ID:1	[INFO: App       ] Sent sensor value 20 in round 14 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:15.326	ID:7	[INFO: App       ] Sent sensor value 49 in round 14 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:15.326	ID:3	[INFO: App       ] Sent sensor value 70 in round 14 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:15.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:15.341	ID:5	[INFO: App       ] Received sensor value 83 from origin 8 in round 14
+01:15.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:15.352	ID:5	[INFO: App       ] Received sensor value 49 from origin 7 in round 14
+01:15.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:15.366	ID:5	[INFO: App       ] Received sensor value 86 from origin 2 in round 14
+01:15.369	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:15.380	ID:5	[INFO: App       ] Received sensor value 70 from origin 3 in round 14
+01:15.384	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:15.391	ID:5	[INFO: App       ] Received sensor value 51 from origin 4 in round 14
+01:15.395	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:15.497	ID:5	[INFO: App       ] Received sensor value 7 from origin 9 in round 14
+01:15.501	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:20.326	ID:4	[INFO: App       ] Sent sensor value 8 in round 15 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:20.326	ID:9	[INFO: App       ] Sent sensor value 37 in round 15 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:20.326	ID:1	[INFO: App       ] Sent sensor value 23 in round 15 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:20.326	ID:3	[INFO: App       ] Sent sensor value 84 in round 15 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:20.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 98 in round 15 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:20.326	ID:7	[INFO: App       ] Sent sensor value 38 in round 15 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:20.326	ID:2	[INFO: App       ] Sent sensor value 65 in round 15 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:20.326	ID:6	[INFO: App       ] Sent sensor value 97 in round 15 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:20.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:20.341	ID:5	[INFO: App       ] Received sensor value 98 from origin 8 in round 15
+01:20.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:20.391	ID:5	[INFO: App       ] Received sensor value 65 from origin 2 in round 15
+01:20.395	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:20.402	ID:5	[INFO: App       ] Received sensor value 97 from origin 6 in round 15
+01:20.406	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:20.413	ID:5	[INFO: App       ] Received sensor value 84 from origin 3 in round 15
+01:20.417	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:20.427	ID:5	[INFO: App       ] Received sensor value 23 from origin 1 in round 15
+01:20.431	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:20.438	ID:5	[INFO: App       ] Received sensor value 38 from origin 7 in round 15
+01:20.442	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:25.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 8 in round 16 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:25.326	ID:1	[INFO: App       ] Sent sensor value 1 in round 16 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:25.326	ID:9	[INFO: App       ] Sent sensor value 84 in round 16 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:25.326	ID:3	[INFO: App       ] Sent sensor value 82 in round 16 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:25.326	ID:7	[INFO: App       ] Sent sensor value 61 in round 16 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:25.326	ID:4	[INFO: App       ] Sent sensor value 64 in round 16 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:25.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 97 in round 16 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:25.326	ID:6	[INFO: App       ] Sent sensor value 64 in round 16 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:25.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:25.341	ID:5	[INFO: App       ] Received sensor value 82 from origin 3 in round 16
+01:25.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:25.352	ID:5	[INFO: App       ] Received sensor value 97 from origin 8 in round 16
+01:25.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:25.363	ID:5	[INFO: App       ] Received sensor value 8 from origin 2 in round 16
+01:25.367	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:25.427	ID:5	[INFO: App       ] Received sensor value 64 from origin 6 in round 16
+01:25.431	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:25.438	ID:5	[INFO: App       ] Received sensor value 84 from origin 9 in round 16
+01:25.442	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:25.556	ID:5	[INFO: App       ] Received sensor value 61 from origin 7 in round 16
+01:25.560	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:30.326	ID:6	[INFO: App       ] Sent sensor value 14 in round 17 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:30.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 91 in round 17 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:30.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 65 in round 17 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:30.326	ID:9	[INFO: App       ] Sent sensor value 38 in round 17 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:30.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 23 in round 17 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:30.326	ID:2	[INFO: App       ] Sent sensor value 99 in round 17 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:30.326	ID:1	[INFO: App       ] Sent sensor value 37 in round 17 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:30.326	ID:7	[INFO: App       ] Sent sensor value 96 in round 17 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:30.340	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:30.345	ID:5	[INFO: App       ] Received sensor value 99 from origin 2 in round 17
+01:30.349	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:30.356	ID:5	[INFO: App       ] Received sensor value 96 from origin 7 in round 17
+01:30.360	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:30.367	ID:5	[INFO: App       ] Received sensor value 14 from origin 6 in round 17
+01:30.371	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:30.396	ID:5	[INFO: App       ] Received sensor value 65 from origin 8 in round 17
+01:30.400	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:30.407	ID:5	[INFO: App       ] Received sensor value 38 from origin 9 in round 17
+01:30.411	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:30.419	ID:5	[INFO: App       ] Received sensor value 23 from origin 3 in round 17
+01:30.423	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:30.466	ID:5	[INFO: App       ] Received sensor value 91 from origin 4 in round 17
+01:30.470	ID:5	[INFO: App       ] Thus received 7 values in this round
+01:30.482	ID:5	[INFO: App       ] Received sensor value 37 from origin 1 in round 17
+01:30.485	ID:5	[INFO: App       ] Thus received 8 values in this round
+01:35.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 82 in round 18 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:35.326	ID:7	[INFO: App       ] Sent sensor value 26 in round 18 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:35.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 58 in round 18 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:35.326	ID:4	[INFO: App       ] Sent sensor value 35 in round 18 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:35.326	ID:3	[INFO: App       ] Sent sensor value 65 in round 18 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:35.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 83 in round 18 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:35.326	ID:1	[INFO: App       ] Sent sensor value 86 in round 18 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:35.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 33 in round 18 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:35.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:35.341	ID:5	[INFO: App       ] Received sensor value 33 from origin 8 in round 18
+01:35.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:35.352	ID:5	[INFO: App       ] Received sensor value 83 from origin 6 in round 18
+01:35.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:35.419	ID:5	[INFO: App       ] Received sensor value 58 from origin 2 in round 18
+01:35.423	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:35.435	ID:5	[INFO: App       ] Received sensor value 35 from origin 4 in round 18
+01:35.438	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:35.446	ID:5	[INFO: App       ] Received sensor value 82 from origin 9 in round 18
+01:35.450	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:35.474	ID:5	[INFO: App       ] Received sensor value 65 from origin 3 in round 18
+01:35.478	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:35.497	ID:5	[INFO: App       ] Received sensor value 86 from origin 1 in round 18
+01:35.501	ID:5	[INFO: App       ] Thus received 7 values in this round
+01:40.326	ID:3	[INFO: App       ] Sent sensor value 19 in round 19 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:40.326	ID:2	[INFO: App       ] Sent sensor value 14 in round 19 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:40.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 64 in round 19 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:40.326	ID:4	[INFO: App       ] Sent sensor value 64 in round 19 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:40.326	ID:1	[INFO: App       ] Sent sensor value 72 in round 19 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:40.326	ID:7	[INFO: App       ] Sent sensor value 94 in round 19 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:40.326	ID:9	[INFO: App       ] Sent sensor value 96 in round 19 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:40.326	ID:6	[INFO: App       ] Sent sensor value 73 in round 19 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:40.340	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:40.345	ID:5	[INFO: App       ] Received sensor value 14 from origin 2 in round 19
+01:40.349	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:40.356	ID:5	[INFO: App       ] Received sensor value 64 from origin 4 in round 19
+01:40.360	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:40.368	ID:5	[INFO: App       ] Received sensor value 73 from origin 6 in round 19
+01:40.372	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:40.383	ID:5	[INFO: App       ] Received sensor value 64 from origin 8 in round 19
+01:40.387	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:40.394	ID:5	[INFO: App       ] Received sensor value 96 from origin 9 in round 19
+01:40.398	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:40.412	ID:5	[INFO: App       ] Received sensor value 19 from origin 3 in round 19
+01:40.416	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:40.435	ID:5	[INFO: App       ] Received sensor value 94 from origin 7 in round 19
+01:40.439	ID:5	[INFO: App       ] Thus received 7 values in this round
+01:40.458	ID:5	[INFO: App       ] Received sensor value 72 from origin 1 in round 19
+01:40.462	ID:5	[INFO: App       ] Thus received 8 values in this round
+01:45.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 45 in round 20 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:45.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 92 in round 20 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:45.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 69 in round 20 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:45.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 67 in round 20 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:45.326	ID:9	[INFO: App       ] Sent sensor value 23 in round 20 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:45.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 37 in round 20 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:45.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 61 in round 20 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:45.326	ID:1	[INFO: App       ] Sent sensor value 96 in round 20 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:45.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:45.341	ID:5	[INFO: App       ] Received sensor value 37 from origin 6 in round 20
+01:45.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:45.365	ID:5	[INFO: App       ] Received sensor value 67 from origin 4 in round 20
+01:45.369	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:45.376	ID:5	[INFO: App       ] Received sensor value 61 from origin 2 in round 20
+01:45.380	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:45.388	ID:5	[INFO: App       ] Received sensor value 45 from origin 8 in round 20
+01:45.392	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:45.443	ID:5	[INFO: App       ] Received sensor value 23 from origin 9 in round 20
+01:45.447	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:45.459	ID:5	[INFO: App       ] Received sensor value 92 from origin 7 in round 20
+01:45.462	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:45.482	ID:5	[INFO: App       ] Received sensor value 96 from origin 1 in round 20
+01:45.486	ID:5	[INFO: App       ] Thus received 7 values in this round
+01:45.591	ID:5	[INFO: App       ] Received sensor value 69 from origin 3 in round 20
+01:45.595	ID:5	[INFO: App       ] Thus received 8 values in this round
+01:50.326	ID:6	[INFO: App       ] Sent sensor value 16 in round 21 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:50.326	ID:2	[INFO: App       ] Sent sensor value 50 in round 21 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:50.326	ID:7	[INFO: App       ] Sent sensor value 70 in round 21 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:50.326	ID:3	[INFO: App       ] Sent sensor value 15 in round 21 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:50.326	ID:9	[INFO: App       ] Sent sensor value 61 in round 21 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:50.326	ID:4	[INFO: App       ] Sent sensor value 39 in round 21 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:50.326	ID:8	[INFO: App       ] Sent sensor value 61 in round 21 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:50.326	ID:1	[INFO: App       ] Sent sensor value 94 in round 21 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:50.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:50.341	ID:5	[INFO: App       ] Received sensor value 39 from origin 4 in round 21
+01:50.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:50.357	ID:5	[INFO: App       ] Received sensor value 50 from origin 2 in round 21
+01:50.361	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:50.368	ID:5	[INFO: App       ] Received sensor value 16 from origin 6 in round 21
+01:50.372	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:50.390	ID:5	[INFO: App       ] Received sensor value 70 from origin 7 in round 21
+01:50.394	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:50.401	ID:5	[INFO: App       ] Received sensor value 15 from origin 3 in round 21
+01:50.405	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:50.451	ID:5	[INFO: App       ] Received sensor value 61 from origin 8 in round 21
+01:50.454	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:50.482	ID:5	[INFO: App       ] Received sensor value 61 from origin 9 in round 21
+01:50.486	ID:5	[INFO: App       ] Thus received 7 values in this round
+01:50.521	ID:5	[INFO: App       ] Received sensor value 94 from origin 1 in round 21
+01:50.525	ID:5	[INFO: App       ] Thus received 8 values in this round
+01:55.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 7 in round 22 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:55.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 2 in round 22 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:55.326	ID:8	[INFO: App       ] Sent sensor value 50 in round 22 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:55.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 92 in round 22 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:55.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 15 in round 22 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:55.326	ID:3	[INFO: App       ] Sent sensor value 89 in round 22 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:55.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 33 in round 22 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:55.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 73 in round 22 to parent node 0505.0500.0574.1200[INFO: App       ] 
+01:55.351	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+01:55.356	ID:5	[INFO: App       ] Received sensor value 7 from origin 4 in round 22
+01:55.360	ID:5	[INFO: App       ] Thus received 1 values in this round
+01:55.367	ID:5	[INFO: App       ] Received sensor value 50 from origin 8 in round 22
+01:55.371	ID:5	[INFO: App       ] Thus received 2 values in this round
+01:55.378	ID:5	[INFO: App       ] Received sensor value 33 from origin 6 in round 22
+01:55.382	ID:5	[INFO: App       ] Thus received 3 values in this round
+01:55.404	ID:5	[INFO: App       ] Received sensor value 89 from origin 3 in round 22
+01:55.408	ID:5	[INFO: App       ] Thus received 4 values in this round
+01:55.419	ID:5	[INFO: App       ] Received sensor value 73 from origin 2 in round 22
+01:55.423	ID:5	[INFO: App       ] Thus received 5 values in this round
+01:55.430	ID:5	[INFO: App       ] Received sensor value 2 from origin 7 in round 22
+01:55.434	ID:5	[INFO: App       ] Thus received 6 values in this round
+01:55.466	ID:5	[INFO: App       ] Received sensor value 92 from origin 1 in round 22
+01:55.470	ID:5	[INFO: App       ] Thus received 7 values in this round
+02:00.326	ID:6	[INFO: App       ] Sent sensor value 4 in round 23 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:00.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 16 in round 23 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:00.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 22 in round 23 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:00.326	ID:7	[INFO: App       ] Sent sensor value 80 in round 23 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:00.326	ID:1	[INFO: App       ] Sent sensor value 70 in round 23 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:00.326	ID:3	[INFO: App       ] Sent sensor value 15 in round 23 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:00.326	ID:4	[INFO: App       ] Sent sensor value 38 in round 23 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:00.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 73 in round 23 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:00.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:00.341	ID:5	[INFO: App       ] Received sensor value 16 from origin 2 in round 23
+02:00.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:00.388	ID:5	[INFO: App       ] Received sensor value 70 from origin 1 in round 23
+02:00.392	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:00.399	ID:5	[INFO: App       ] Received sensor value 22 from origin 9 in round 23
+02:00.403	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:00.410	ID:5	[INFO: App       ] Received sensor value 80 from origin 7 in round 23
+02:00.414	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:05.326	ID:2	[INFO: App       ] Sent sensor value 7 in round 24 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:05.326	ID:7	[INFO: App       ] Sent sensor value 8 in round 24 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:05.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 2 in round 24 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:05.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 70 in round 24 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:05.326	ID:3	[INFO: App       ] Sent sensor value 47 in round 24 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:05.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 65 in round 24 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:05.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 37 in round 24 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:05.326	ID:6	[INFO: App       ] Sent sensor value 91 in round 24 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:05.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:05.341	ID:5	[INFO: App       ] Received sensor value 37 from origin 8 in round 24
+02:05.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:05.353	ID:5	[INFO: App       ] Received sensor value 91 from origin 6 in round 24
+02:05.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:05.442	ID:5	[INFO: App       ] Received sensor value 2 from origin 1 in round 24
+02:05.446	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:05.453	ID:5	[INFO: App       ] Received sensor value 70 from origin 9 in round 24
+02:05.457	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:05.552	ID:5	[INFO: App       ] Received sensor value 8 from origin 7 in round 24
+02:05.556	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:10.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 6 in round 25 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:10.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 16 in round 25 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:10.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 84 in round 25 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:10.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 80 in round 25 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:10.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 38 in round 25 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:10.326	ID:1	[INFO: App       ] Sent sensor value 84 in round 25 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:10.326	ID:7	[INFO: App       ] Sent sensor value 32 in round 25 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:10.326	ID:3	[INFO: App       ] Sent sensor value 66 in round 25 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:10.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:10.341	ID:5	[INFO: App       ] Received sensor value 16 from origin 8 in round 25
+02:10.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:10.374	ID:5	[INFO: App       ] Received sensor value 6 from origin 6 in round 25
+02:10.378	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:10.474	ID:5	[INFO: App       ] Received sensor value 16 from origin 8 in round 25
+02:10.478	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:10.506	ID:5	[INFO: App       ] Received sensor value 38 from origin 2 in round 25
+02:10.509	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:10.516	ID:5	[INFO: App       ] Received sensor value 66 from origin 3 in round 25
+02:10.520	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:15.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 9 in round 26 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:15.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 6 in round 26 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:15.326	ID:1	[INFO: App       ] Sent sensor value 98 in round 26 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:15.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 67 in round 26 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:15.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 94 in round 26 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:15.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 97 in round 26 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:15.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 66 in round 26 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:15.326	ID:7	[INFO: App       ] Sent sensor value 43 in round 26 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:15.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:15.341	ID:5	[INFO: App       ] Received sensor value 94 from origin 8 in round 26
+02:15.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:15.391	ID:5	[INFO: App       ] Received sensor value 97 from origin 4 in round 26
+02:15.395	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:15.412	ID:5	[INFO: App       ] Received sensor value 98 from origin 1 in round 26
+02:15.415	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:15.422	ID:5	[INFO: App       ] Received sensor value 67 from origin 6 in round 26
+02:15.426	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:15.435	ID:5	[INFO: App       ] Received sensor value 6 from origin 2 in round 26
+02:15.439	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:15.490	ID:5	[INFO: App       ] Received sensor value 43 from origin 7 in round 26
+02:15.493	ID:5	[INFO: App       ] Thus received 6 values in this round
+02:15.552	ID:5	[INFO: App       ] Received sensor value 66 from origin 9 in round 26
+02:15.556	ID:5	[INFO: App       ] Thus received 7 values in this round
+02:20.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 2 in round 27 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:20.326	ID:8	[INFO: App       ] Sent sensor value 2 in round 27 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:20.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 2 in round 27 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:20.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 32 in round 27 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:20.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 20 in round 27 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:20.326	ID:3	[INFO: App       ] Sent sensor value 43 in round 27 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:20.326	ID:7	[INFO: App       ] Sent sensor value 45 in round 27 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:20.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 70 in round 27 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:20.340	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:20.345	ID:5	[INFO: App       ] Received sensor value 2 from origin 2 in round 27
+02:20.349	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:20.360	ID:5	[INFO: App       ] Received sensor value 20 from origin 4 in round 27
+02:20.364	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:20.373	ID:5	[INFO: App       ] Received sensor value 2 from origin 2 in round 27
+02:20.377	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:20.384	ID:5	[INFO: App       ] Received sensor value 2 from origin 9 in round 27
+02:20.387	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:20.395	ID:5	[INFO: App       ] Received sensor value 43 from origin 3 in round 27
+02:20.399	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:20.407	ID:5	[INFO: App       ] Received sensor value 45 from origin 7 in round 27
+02:20.411	ID:5	[INFO: App       ] Thus received 6 values in this round
+02:20.419	ID:5	[INFO: App       ] Received sensor value 70 from origin 6 in round 27
+02:20.423	ID:5	[INFO: App       ] Thus received 7 values in this round
+02:20.450	ID:5	[INFO: App       ] Received sensor value 2 from origin 8 in round 27
+02:20.454	ID:5	[INFO: App       ] Thus received 8 values in this round
+02:25.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 23 in round 28 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:25.326	ID:9	[INFO: App       ] Sent sensor value 24 in round 28 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:25.326	ID:6	[INFO: App       ] Sent sensor value 27 in round 28 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:25.326	ID:1	[INFO: App       ] Sent sensor value 23 in round 28 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:25.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 82 in round 28 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:25.326	ID:8	[INFO: App       ] Sent sensor value 82 in round 28 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:25.326	ID:7	[INFO: App       ] Sent sensor value 27 in round 28 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:25.326	ID:3	[INFO: App       ] Sent sensor value 45 in round 28 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:25.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:25.341	ID:5	[INFO: App       ] Received sensor value 27 from origin 7 in round 28
+02:25.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:25.380	ID:5	[INFO: App       ] Received sensor value 82 from origin 2 in round 28
+02:25.383	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:25.390	ID:5	[INFO: App       ] Received sensor value 23 from origin 4 in round 28
+02:25.394	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:25.401	ID:5	[INFO: App       ] Received sensor value 23 from origin 1 in round 28
+02:25.405	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:25.413	ID:5	[INFO: App       ] Received sensor value 45 from origin 3 in round 28
+02:25.417	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:30.326	ID:1	[INFO: App       ] Sent sensor value 9 in round 29 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:30.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 16 in round 29 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:30.326	ID:6	[INFO: App       ] Sent sensor value 64 in round 29 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:30.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 70 in round 29 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:30.326	ID:3	[INFO: App       ] Sent sensor value 87 in round 29 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:30.326	ID:2	[INFO: App       ] Sent sensor value 49 in round 29 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:30.326	ID:9	[INFO: App       ] Sent sensor value 18 in round 29 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:30.326	ID:7	[INFO: App       ] Sent sensor value 22 in round 29 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:30.347	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:30.352	ID:5	[INFO: App       ] Received sensor value 49 from origin 2 in round 29
+02:30.356	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:30.363	ID:5	[INFO: App       ] Received sensor value 16 from origin 4 in round 29
+02:30.367	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:30.411	ID:5	[INFO: App       ] Received sensor value 87 from origin 3 in round 29
+02:30.415	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:30.422	ID:5	[INFO: App       ] Received sensor value 22 from origin 7 in round 29
+02:30.426	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:30.458	ID:5	[INFO: App       ] Received sensor value 16 from origin 4 in round 29
+02:30.462	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:35.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 27 in round 30 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:35.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 27 in round 30 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:35.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 84 in round 30 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:35.326	ID:3	[INFO: App       ] Sent sensor value 82 in round 30 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:35.326	ID:1	[INFO: App       ] Sent sensor value 79 in round 30 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:35.326	ID:9	[INFO: App       ] Sent sensor value 92 in round 30 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:35.326	ID:7	[INFO: App       ] Sent sensor value 12 in round 30 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:35.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 86 in round 30 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:35.355	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:35.361	ID:5	[INFO: App       ] Received sensor value 27 from origin 2 in round 30
+02:35.364	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:35.372	ID:5	[INFO: App       ] Received sensor value 79 from origin 1 in round 30
+02:35.376	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:35.403	ID:5	[INFO: App       ] Received sensor value 82 from origin 3 in round 30
+02:35.407	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:35.435	ID:5	[INFO: App       ] Received sensor value 27 from origin 8 in round 30
+02:35.439	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:35.446	ID:5	[INFO: App       ] Received sensor value 12 from origin 7 in round 30
+02:35.450	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:40.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 1 in round 31 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:40.326	ID:9	[INFO: App       ] Sent sensor value 47 in round 31 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:40.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 46 in round 31 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:40.326	ID:3	[INFO: App       ] Sent sensor value 56 in round 31 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:40.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 38 in round 31 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:40.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 61 in round 31 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:40.326	ID:1	[INFO: App       ] Sent sensor value 68 in round 31 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:40.326	ID:7	[INFO: App       ] Sent sensor value 34 in round 31 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:40.371	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:40.376	ID:5	[INFO: App       ] Received sensor value 68 from origin 1 in round 31
+02:40.380	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:40.388	ID:5	[INFO: App       ] Received sensor value 46 from origin 8 in round 31
+02:40.392	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:40.399	ID:5	[INFO: App       ] Received sensor value 38 from origin 2 in round 31
+02:40.403	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:40.431	ID:5	[INFO: App       ] Received sensor value 47 from origin 9 in round 31
+02:40.435	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:40.450	ID:5	[INFO: App       ] Received sensor value 34 from origin 7 in round 31
+02:40.454	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:40.461	ID:5	[INFO: App       ] Received sensor value 1 from origin 6 in round 31
+02:40.465	ID:5	[INFO: App       ] Thus received 6 values in this round
+02:40.506	ID:5	[INFO: App       ] Received sensor value 56 from origin 3 in round 31
+02:40.509	ID:5	[INFO: App       ] Thus received 7 values in this round
+02:45.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 66 in round 32 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:45.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 46 in round 32 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:45.326	ID:1	[INFO: App       ] Sent sensor value 56 in round 32 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:45.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 24 in round 32 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:45.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 69 in round 32 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:45.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 63 in round 32 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:45.326	ID:9	[INFO: App       ] Sent sensor value 65 in round 32 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:45.326	ID:3	[INFO: App       ] Sent sensor value 46 in round 32 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:45.340	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:45.345	ID:5	[INFO: App       ] Received sensor value 66 from origin 6 in round 32
+02:45.349	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:45.356	ID:5	[INFO: App       ] Received sensor value 69 from origin 4 in round 32
+02:45.360	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:45.387	ID:5	[INFO: App       ] Received sensor value 46 from origin 2 in round 32
+02:45.391	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:45.411	ID:5	[INFO: App       ] Received sensor value 46 from origin 3 in round 32
+02:45.415	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:45.422	ID:5	[INFO: App       ] Received sensor value 24 from origin 7 in round 32
+02:45.426	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:45.443	ID:5	[INFO: App       ] Received sensor value 63 from origin 8 in round 32
+02:45.447	ID:5	[INFO: App       ] Thus received 6 values in this round
+02:45.454	ID:5	[INFO: App       ] Received sensor value 65 from origin 9 in round 32
+02:45.458	ID:5	[INFO: App       ] Thus received 7 values in this round
+02:50.326	ID:9	[INFO: App       ] Sent sensor value 8 in round 33 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:50.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 83 in round 33 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:50.326	ID:1	[INFO: App       ] Sent sensor value 14 in round 33 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:50.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 32 in round 33 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:50.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 65 in round 33 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:50.326	ID:2	[INFO: App       ] Sent sensor value 61 in round 33 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:50.326	ID:3	[INFO: App       ] Sent sensor value 94 in round 33 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:50.326	ID:7	[INFO: App       ] Sent sensor value 53 in round 33 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:50.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:50.341	ID:5	[INFO: App       ] Received sensor value 65 from origin 6 in round 33
+02:50.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:50.365	ID:5	[INFO: App       ] Received sensor value 94 from origin 3 in round 33
+02:50.369	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:50.388	ID:5	[INFO: App       ] Received sensor value 32 from origin 4 in round 33
+02:50.392	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:50.450	ID:5	[INFO: App       ] Received sensor value 61 from origin 2 in round 33
+02:50.454	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:50.466	ID:5	[INFO: App       ] Received sensor value 14 from origin 1 in round 33
+02:50.470	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:50.537	ID:5	[INFO: App       ] Received sensor value 83 from origin 8 in round 33
+02:50.541	ID:5	[INFO: App       ] Thus received 6 values in this round
+02:50.575	ID:5	[INFO: App       ] Received sensor value 8 from origin 9 in round 33
+02:50.579	ID:5	[INFO: App       ] Thus received 7 values in this round
+02:55.326	ID:1	[INFO: App       ] Sent sensor value 85 in round 34 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:55.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 83 in round 34 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:55.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 85 in round 34 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:55.326	ID:7	[INFO: App       ] Sent sensor value 71 in round 34 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:55.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 44 in round 34 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:55.326	ID:6	[INFO: App       ] Sent sensor value 56 in round 34 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:55.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 69 in round 34 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:55.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 96 in round 34 to parent node 0505.0500.0574.1200[INFO: App       ] 
+02:55.340	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+02:55.345	ID:5	[INFO: App       ] Received sensor value 83 from origin 2 in round 34
+02:55.349	ID:5	[INFO: App       ] Thus received 1 values in this round
+02:55.392	ID:5	[INFO: App       ] Received sensor value 96 from origin 4 in round 34
+02:55.396	ID:5	[INFO: App       ] Thus received 2 values in this round
+02:55.404	ID:5	[INFO: App       ] Received sensor value 44 from origin 3 in round 34
+02:55.408	ID:5	[INFO: App       ] Thus received 3 values in this round
+02:55.415	ID:5	[INFO: App       ] Received sensor value 56 from origin 6 in round 34
+02:55.419	ID:5	[INFO: App       ] Thus received 4 values in this round
+02:55.435	ID:5	[INFO: App       ] Received sensor value 69 from origin 9 in round 34
+02:55.439	ID:5	[INFO: App       ] Thus received 5 values in this round
+02:55.450	ID:5	[INFO: App       ] Received sensor value 85 from origin 1 in round 34
+02:55.454	ID:5	[INFO: App       ] Thus received 6 values in this round
+02:55.474	ID:5	[INFO: App       ] Received sensor value 71 from origin 7 in round 34
+02:55.478	ID:5	[INFO: App       ] Thus received 7 values in this round
+03:00.326	ID:9	[INFO: App       ] Sent sensor value 8 in round 35 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:00.326	ID:4	[INFO: App       ] Sent sensor value 2 in round 35 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:00.326	ID:6	[INFO: App       ] Sent sensor value 61 in round 35 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:00.326	ID:8	[INFO: App       ] Sent sensor value 72 in round 35 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:00.326	ID:3	[INFO: App       ] Sent sensor value 59 in round 35 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:00.326	ID:1	[INFO: App       ] Sent sensor value 24 in round 35 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:00.326	ID:7	[INFO: App       ] Sent sensor value 70 in round 35 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:00.326	ID:2	[INFO: App       ] Sent sensor value 96 in round 35 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:00.356	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:00.361	ID:5	[INFO: App       ] Received sensor value 96 from origin 2 in round 35
+03:00.365	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:00.372	ID:5	[INFO: App       ] Received sensor value 2 from origin 4 in round 35
+03:00.376	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:00.388	ID:5	[INFO: App       ] Received sensor value 61 from origin 6 in round 35
+03:00.392	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:00.416	ID:5	[INFO: App       ] Received sensor value 70 from origin 7 in round 35
+03:00.419	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:00.427	ID:5	[INFO: App       ] Received sensor value 59 from origin 3 in round 35
+03:00.431	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:00.450	ID:5	[INFO: App       ] Received sensor value 24 from origin 1 in round 35
+03:00.454	ID:5	[INFO: App       ] Thus received 6 values in this round
+03:05.326	ID:6	[INFO: App       ] Sent sensor value 71 in round 36 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:05.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 51 in round 36 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:05.326	ID:9	[INFO: App       ] Sent sensor value 44 in round 36 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:05.326	ID:3	[INFO: App       ] Sent sensor value 69 in round 36 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:05.326	ID:1	[INFO: App       ] Sent sensor value 53 in round 36 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:05.326	ID:8	[INFO: App       ] Sent sensor value 56 in round 36 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:05.326	ID:7	[INFO: App       ] Sent sensor value 80 in round 36 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:05.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 65 in round 36 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:05.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:05.341	ID:5	[INFO: App       ] Received sensor value 71 from origin 6 in round 36
+03:05.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:05.352	ID:5	[INFO: App       ] Received sensor value 69 from origin 3 in round 36
+03:05.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:05.380	ID:5	[INFO: App       ] Received sensor value 51 from origin 2 in round 36
+03:05.384	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:05.419	ID:5	[INFO: App       ] Received sensor value 80 from origin 7 in round 36
+03:05.423	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:05.474	ID:5	[INFO: App       ] Received sensor value 53 from origin 1 in round 36
+03:05.478	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:10.326	ID:6	[INFO: App       ] Sent sensor value 81 in round 37 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:10.326	ID:3	[INFO: App       ] Sent sensor value 36 in round 37 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:10.326	ID:8	[INFO: App       ] Sent sensor value 23 in round 37 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:10.326	ID:1	[INFO: App       ] Sent sensor value 81 in round 37 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:10.326	ID:9	[INFO: App       ] Sent sensor value 59 in round 37 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:10.326	ID:2	[INFO: App       ] Sent sensor value 56 in round 37 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:10.326	ID:7	[INFO: App       ] Sent sensor value 75 in round 37 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:10.326	ID:4	[INFO: App       ] Sent sensor value 96 in round 37 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:10.348	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:10.353	ID:5	[INFO: App       ] Received sensor value 36 from origin 3 in round 37
+03:10.357	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:10.365	ID:5	[INFO: App       ] Received sensor value 81 from origin 6 in round 37
+03:10.369	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:10.376	ID:5	[INFO: App       ] Received sensor value 23 from origin 8 in round 37
+03:10.380	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:10.459	ID:5	[INFO: App       ] Received sensor value 56 from origin 2 in round 37
+03:10.462	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:10.497	ID:5	[INFO: App       ] Received sensor value 75 from origin 7 in round 37
+03:10.501	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:15.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 19 in round 38 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:15.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 19 in round 38 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:15.326	ID:6	[INFO: App       ] Sent sensor value 85 in round 38 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:15.326	ID:1	[INFO: App       ] Sent sensor value 11 in round 38 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:15.326	ID:7	[INFO: App       ] Sent sensor value 89 in round 38 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:15.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 61 in round 38 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:15.326	ID:3	[INFO: App       ] Sent sensor value 14 in round 38 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:15.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 73 in round 38 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:15.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:15.341	ID:5	[INFO: App       ] Received sensor value 85 from origin 6 in round 38
+03:15.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:15.365	ID:5	[INFO: App       ] Received sensor value 19 from origin 8 in round 38
+03:15.369	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:15.403	ID:5	[INFO: App       ] Received sensor value 89 from origin 7 in round 38
+03:15.407	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:15.416	ID:5	[INFO: App       ] Received sensor value 73 from origin 9 in round 38
+03:15.420	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:15.482	ID:5	[INFO: App       ] Received sensor value 61 from origin 2 in round 38
+03:15.485	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:20.326	ID:8	[INFO: App       ] Sent sensor value 7 in round 39 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:20.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 63 in round 39 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:20.326	ID:9	[INFO: App       ] Sent sensor value 14 in round 39 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:20.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 17 in round 39 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:20.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 52 in round 39 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:20.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 42 in round 39 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:20.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 13 in round 39 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:20.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 42 in round 39 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:20.342	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:20.348	ID:5	[INFO: App       ] Received sensor value 42 from origin 2 in round 39
+03:20.352	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:20.380	ID:5	[INFO: App       ] Received sensor value 14 from origin 9 in round 39
+03:20.384	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:20.391	ID:5	[INFO: App       ] Received sensor value 52 from origin 6 in round 39
+03:20.395	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:20.402	ID:5	[INFO: App       ] Received sensor value 7 from origin 8 in round 39
+03:20.406	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:20.419	ID:5	[INFO: App       ] Received sensor value 42 from origin 4 in round 39
+03:20.423	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:20.474	ID:5	[INFO: App       ] Received sensor value 63 from origin 7 in round 39
+03:20.478	ID:5	[INFO: App       ] Thus received 6 values in this round
+03:20.537	ID:5	[INFO: App       ] Received sensor value 13 from origin 1 in round 39
+03:20.541	ID:5	[INFO: App       ] Thus received 7 values in this round
+03:25.326	ID:7	[INFO: App       ] Sent sensor value 7 in round 40 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:25.326	ID:1	[INFO: App       ] Sent sensor value 44 in round 40 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:25.326	ID:4	[INFO: App       ] Sent sensor value 69 in round 40 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:25.326	ID:8	[INFO: App       ] Sent sensor value 69 in round 40 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:25.326	ID:9	[INFO: App       ] Sent sensor value 98 in round 40 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:25.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 61 in round 40 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:25.326	ID:6	[INFO: App       ] Sent sensor value 84 in round 40 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:25.326	ID:3	[INFO: App       ] Sent sensor value 23 in round 40 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:25.348	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:25.353	ID:5	[INFO: App       ] Received sensor value 61 from origin 2 in round 40
+03:25.357	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:25.372	ID:5	[INFO: App       ] Received sensor value 69 from origin 8 in round 40
+03:25.376	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:25.388	ID:5	[INFO: App       ] Received sensor value 69 from origin 4 in round 40
+03:25.392	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:25.419	ID:5	[INFO: App       ] Received sensor value 84 from origin 6 in round 40
+03:25.423	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:25.450	ID:5	[INFO: App       ] Received sensor value 7 from origin 7 in round 40
+03:25.454	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:25.513	ID:5	[INFO: App       ] Received sensor value 98 from origin 9 in round 40
+03:25.517	ID:5	[INFO: App       ] Thus received 6 values in this round
+03:25.568	ID:5	[INFO: App       ] Received sensor value 44 from origin 1 in round 40
+03:25.572	ID:5	[INFO: App       ] Thus received 7 values in this round
+03:25.638	ID:5	[INFO: App       ] Received sensor value 23 from origin 3 in round 40
+03:25.642	ID:5	[INFO: App       ] Thus received 8 values in this round
+03:30.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 9 in round 41 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:30.326	ID:3	[INFO: App       ] Sent sensor value 6 in round 41 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:30.326	ID:7	[INFO: App       ] Sent sensor value 50 in round 41 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:30.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 54 in round 41 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:30.326	ID:6	[INFO: App       ] Sent sensor value 90 in round 41 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:30.326	ID:8	[INFO: App       ] Sent sensor value 92 in round 41 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:30.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 23 in round 41 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:30.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 45 in round 41 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:30.335	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:30.340	ID:5	[INFO: App       ] Received sensor value 6 from origin 3 in round 41
+03:30.344	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:30.380	ID:5	[INFO: App       ] Received sensor value 92 from origin 8 in round 41
+03:30.384	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:30.412	ID:5	[INFO: App       ] Received sensor value 45 from origin 4 in round 41
+03:30.416	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:30.470	ID:5	[INFO: App       ] Received sensor value 9 from origin 1 in round 41
+03:30.474	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:30.481	ID:5	[INFO: App       ] Received sensor value 23 from origin 9 in round 41
+03:30.485	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:30.591	ID:5	[INFO: App       ] Received sensor value 50 from origin 7 in round 41
+03:30.595	ID:5	[INFO: App       ] Thus received 6 values in this round
+03:35.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 1 in round 42 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:35.326	ID:3	[INFO: App       ] Sent sensor value 45 in round 42 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:35.326	ID:7	[INFO: App       ] Sent sensor value 94 in round 42 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:35.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 61 in round 42 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:35.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 92 in round 42 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:35.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 92 in round 42 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:35.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 63 in round 42 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:35.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 38 in round 42 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:35.344	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:35.349	ID:5	[INFO: App       ] Received sensor value 1 from origin 6 in round 42
+03:35.353	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:35.365	ID:5	[INFO: App       ] Received sensor value 92 from origin 8 in round 42
+03:35.369	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:35.376	ID:5	[INFO: App       ] Received sensor value 94 from origin 7 in round 42
+03:35.379	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:35.412	ID:5	[INFO: App       ] Received sensor value 92 from origin 2 in round 42
+03:35.416	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:35.450	ID:5	[INFO: App       ] Received sensor value 61 from origin 1 in round 42
+03:35.454	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:35.466	ID:5	[INFO: App       ] Received sensor value 63 from origin 9 in round 42
+03:35.470	ID:5	[INFO: App       ] Thus received 6 values in this round
+03:35.575	ID:5	[INFO: App       ] Received sensor value 38 from origin 4 in round 42
+03:35.579	ID:5	[INFO: App       ] Thus received 7 values in this round
+03:40.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 7 in round 43 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:40.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 9 in round 43 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:40.326	ID:1	[INFO: App       ] Sent sensor value 7 in round 43 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:40.326	ID:7	[INFO: App       ] Sent sensor value 18 in round 43 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:40.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 15 in round 43 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:40.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 80 in round 43 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:40.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 59 in round 43 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:40.326	ID:3	[INFO: App       ] Sent sensor value 61 in round 43 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:40.348	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:40.353	ID:5	[INFO: App       ] Received sensor value 59 from origin 4 in round 43
+03:40.357	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:40.364	ID:5	[INFO: App       ] Received sensor value 9 from origin 6 in round 43
+03:40.368	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:40.375	ID:5	[INFO: App       ] Received sensor value 80 from origin 2 in round 43
+03:40.379	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:40.427	ID:5	[INFO: App       ] Received sensor value 7 from origin 9 in round 43
+03:40.431	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:40.497	ID:5	[INFO: App       ] Received sensor value 18 from origin 7 in round 43
+03:40.501	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:45.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 7 in round 44 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:45.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 70 in round 44 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:45.326	ID:9	[INFO: App       ] Sent sensor value 49 in round 44 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:45.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 59 in round 44 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:45.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 59 in round 44 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:45.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 67 in round 44 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:45.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 66 in round 44 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:45.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 75 in round 44 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:45.348	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:45.353	ID:5	[INFO: App       ] Received sensor value 59 from origin 2 in round 44
+03:45.357	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:45.364	ID:5	[INFO: App       ] Received sensor value 67 from origin 7 in round 44
+03:45.368	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:45.411	ID:5	[INFO: App       ] Received sensor value 66 from origin 6 in round 44
+03:45.415	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:45.421	ID:5	[INFO: App       ] Received sensor value 70 from origin 4 in round 44
+03:45.425	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:45.474	ID:5	[INFO: App       ] Received sensor value 49 from origin 9 in round 44
+03:45.478	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:45.486	ID:5	[INFO: App       ] Received sensor value 7 from origin 3 in round 44
+03:45.489	ID:5	[INFO: App       ] Thus received 6 values in this round
+03:45.497	ID:5	[INFO: App       ] Received sensor value 75 from origin 1 in round 44
+03:45.501	ID:5	[INFO: App       ] Thus received 7 values in this round
+03:45.576	ID:5	[INFO: App       ] Received sensor value 59 from origin 8 in round 44
+03:45.579	ID:5	[INFO: App       ] Thus received 8 values in this round
+03:50.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 98 in round 45 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:50.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 53 in round 45 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:50.326	ID:7	[INFO: App       ] Sent sensor value 61 in round 45 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:50.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 84 in round 45 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:50.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 84 in round 45 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:50.326	ID:3	[INFO: App       ] Sent sensor value 91 in round 45 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:50.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 57 in round 45 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:50.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 97 in round 45 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:50.340	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:50.345	ID:5	[INFO: App       ] Received sensor value 57 from origin 4 in round 45
+03:50.349	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:50.443	ID:5	[INFO: App       ] Received sensor value 61 from origin 7 in round 45
+03:50.447	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:50.454	ID:5	[INFO: App       ] Received sensor value 53 from origin 1 in round 45
+03:50.458	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:50.465	ID:5	[INFO: App       ] Received sensor value 84 from origin 2 in round 45
+03:50.469	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:50.490	ID:5	[INFO: App       ] Received sensor value 97 from origin 9 in round 45
+03:50.494	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:55.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 80 in round 46 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:55.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 80 in round 46 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:55.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 53 in round 46 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:55.326	ID:1	[INFO: App       ] Sent sensor value 84 in round 46 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:55.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 90 in round 46 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:55.326	ID:7	[INFO: App       ] Sent sensor value 54 in round 46 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:55.326	ID:6	[INFO: App       ] Sent sensor value 75 in round 46 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:55.326	ID:9	[INFO: App       ] Sent sensor value 51 in round 46 to parent node 0505.0500.0574.1200[INFO: App       ] 
+03:55.348	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+03:55.353	ID:5	[INFO: App       ] Received sensor value 75 from origin 6 in round 46
+03:55.357	ID:5	[INFO: App       ] Thus received 1 values in this round
+03:55.367	ID:5	[INFO: App       ] Received sensor value 54 from origin 7 in round 46
+03:55.370	ID:5	[INFO: App       ] Thus received 2 values in this round
+03:55.388	ID:5	[INFO: App       ] Received sensor value 53 from origin 3 in round 46
+03:55.392	ID:5	[INFO: App       ] Thus received 3 values in this round
+03:55.399	ID:5	[INFO: App       ] Received sensor value 90 from origin 8 in round 46
+03:55.403	ID:5	[INFO: App       ] Thus received 4 values in this round
+03:55.459	ID:5	[INFO: App       ] Received sensor value 51 from origin 9 in round 46
+03:55.462	ID:5	[INFO: App       ] Thus received 5 values in this round
+03:55.474	ID:5	[INFO: App       ] Received sensor value 80 from origin 2 in round 46
+03:55.478	ID:5	[INFO: App       ] Thus received 6 values in this round
+03:55.497	ID:5	[INFO: App       ] Received sensor value 80 from origin 4 in round 46
+03:55.501	ID:5	[INFO: App       ] Thus received 7 values in this round
+04:00.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 9 in round 47 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:00.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 2 in round 47 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:00.326	ID:1	[INFO: App       ] Sent sensor value 82 in round 47 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:00.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 74 in round 47 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:00.326	ID:4	[INFO: App       ] Sent sensor value 47 in round 47 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:00.326	ID:7	[INFO: App       ] Sent sensor value 73 in round 47 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:00.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 49 in round 47 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:00.326	ID:3	[INFO: App       ] Sent sensor value 67 in round 47 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:00.344	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:00.349	ID:5	[INFO: App       ] Received sensor value 47 from origin 4 in round 47
+04:00.353	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:00.379	ID:5	[INFO: App       ] Received sensor value 74 from origin 2 in round 47
+04:00.383	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:00.389	ID:5	[INFO: App       ] Received sensor value 47 from origin 4 in round 47
+04:00.393	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:00.400	ID:5	[INFO: App       ] Received sensor value 2 from origin 6 in round 47
+04:00.404	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:00.512	ID:5	[INFO: App       ] Received sensor value 49 from origin 9 in round 47
+04:00.516	ID:5	[INFO: App       ] Thus received 5 values in this round
+04:00.552	ID:5	[INFO: App       ] Received sensor value 73 from origin 7 in round 47
+04:00.556	ID:5	[INFO: App       ] Thus received 6 values in this round
+04:00.576	ID:5	[INFO: App       ] Received sensor value 82 from origin 1 in round 47
+04:00.579	ID:5	[INFO: App       ] Thus received 7 values in this round
+04:05.326	ID:2	[INFO: App       ] Sent sensor value 8 in round 48 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:05.326	ID:1	[INFO: App       ] Sent sensor value 85 in round 48 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:05.326	ID:7	[INFO: App       ] Sent sensor value 83 in round 48 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:05.326	ID:3	[INFO: App       ] Sent sensor value 82 in round 48 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:05.326	ID:4	[INFO: App       ] Sent sensor value 30 in round 48 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:05.326	ID:6	[INFO: App       ] Sent sensor value 11 in round 48 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:05.326	ID:9	[INFO: App       ] Sent sensor value 55 in round 48 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:05.326	ID:8	[INFO: App       ] Sent sensor value 66 in round 48 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:05.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:05.341	ID:5	[INFO: App       ] Received sensor value 66 from origin 8 in round 48
+04:05.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:05.352	ID:5	[INFO: App       ] Received sensor value 8 from origin 2 in round 48
+04:05.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:05.403	ID:5	[INFO: App       ] Received sensor value 11 from origin 6 in round 48
+04:05.407	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:05.419	ID:5	[INFO: App       ] Received sensor value 82 from origin 3 in round 48
+04:05.423	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:05.450	ID:5	[INFO: App       ] Received sensor value 85 from origin 1 in round 48
+04:05.454	ID:5	[INFO: App       ] Thus received 5 values in this round
+04:05.497	ID:5	[INFO: App       ] Received sensor value 55 from origin 9 in round 48
+04:05.501	ID:5	[INFO: App       ] Thus received 6 values in this round
+04:10.326	ID:4	[INFO: App       ] Sent sensor value 2 in round 49 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:10.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 4 in round 49 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:10.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 98 in round 49 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:10.326	ID:1	[INFO: App       ] Sent sensor value 92 in round 49 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:10.326	ID:7	[INFO: App       ] Sent sensor value 41 in round 49 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:10.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 10 in round 49 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:10.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 65 in round 49 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:10.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 75 in round 49 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:10.348	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:10.353	ID:5	[INFO: App       ] Received sensor value 4 from origin 9 in round 49
+04:10.357	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:10.443	ID:5	[INFO: App       ] Received sensor value 92 from origin 1 in round 49
+04:10.447	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:10.453	ID:5	[INFO: App       ] Received sensor value 10 from origin 6 in round 49
+04:10.457	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:15.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 2 in round 50 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:15.326	ID:4	[INFO: App       ] Sent sensor value 11 in round 50 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:15.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 37 in round 50 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:15.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 83 in round 50 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:15.326	ID:7	[INFO: App       ] Sent sensor value 91 in round 50 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:15.326	ID:8	[INFO: App       ] Sent sensor value 75 in round 50 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:15.326	ID:1	[INFO: App       ] Sent sensor value 61 in round 50 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:15.326	ID:9	0505.0500.0574.1200[INFO: App       ] Sent sensor value 15 in round 50 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:15.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:15.341	ID:5	[INFO: App       ] Received sensor value 91 from origin 7 in round 50
+04:15.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:15.352	ID:5	[INFO: App       ] Received sensor value 15 from origin 9 in round 50
+04:15.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:15.395	ID:5	[INFO: App       ] Received sensor value 75 from origin 8 in round 50
+04:15.399	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:15.435	ID:5	[INFO: App       ] Received sensor value 83 from origin 6 in round 50
+04:15.438	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:15.458	ID:5	[INFO: App       ] Received sensor value 2 from origin 2 in round 50
+04:15.462	ID:5	[INFO: App       ] Thus received 5 values in this round
+04:15.505	ID:5	[INFO: App       ] Received sensor value 37 from origin 3 in round 50
+04:15.509	ID:5	[INFO: App       ] Thus received 6 values in this round
+04:20.326	ID:8	[INFO: App       ] Sent sensor value 2 in round 51 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:20.326	ID:6	[INFO: App       ] Sent sensor value 13 in round 51 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:20.326	ID:3	[INFO: App       ] Sent sensor value 50 in round 51 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:20.326	ID:7	[INFO: App       ] Sent sensor value 41 in round 51 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:20.326	ID:4	[INFO: App       ] Sent sensor value 36 in round 51 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:20.326	ID:1	[INFO: App       ] Sent sensor value 51 in round 51 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:20.326	ID:9	[INFO: App       ] Sent sensor value 61 in round 51 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:20.326	ID:2	[INFO: App       ] Sent sensor value 73 in round 51 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:20.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:20.341	ID:5	[INFO: App       ] Received sensor value 2 from origin 8 in round 51
+04:20.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:20.352	ID:5	[INFO: App       ] Received sensor value 13 from origin 6 in round 51
+04:20.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:20.396	ID:5	[INFO: App       ] Received sensor value 41 from origin 7 in round 51
+04:20.400	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:20.407	ID:5	[INFO: App       ] Received sensor value 73 from origin 2 in round 51
+04:20.411	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:20.459	ID:5	[INFO: App       ] Received sensor value 61 from origin 9 in round 51
+04:20.462	ID:5	[INFO: App       ] Thus received 5 values in this round
+04:25.326	ID:3	[INFO: App       ] Sent sensor value 6 in round 52 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:25.326	ID:6	[INFO: App       ] Sent sensor value 1 in round 52 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:25.326	ID:2	[INFO: App       ] Sent sensor value 9 in round 52 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:25.326	ID:8	[INFO: App       ] Sent sensor value 21 in round 52 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:25.326	ID:9	[INFO: App       ] Sent sensor value 31 in round 52 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:25.326	ID:4	[INFO: App       ] Sent sensor value 60 in round 52 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:25.326	ID:1	[INFO: App       ] Sent sensor value 86 in round 52 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:25.326	ID:7	[INFO: App       ] Sent sensor value 99 in round 52 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:25.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:25.341	ID:5	[INFO: App       ] Received sensor value 86 from origin 1 in round 52
+04:25.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:25.353	ID:5	[INFO: App       ] Received sensor value 21 from origin 8 in round 52
+04:25.357	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:25.403	ID:5	[INFO: App       ] Received sensor value 1 from origin 6 in round 52
+04:25.407	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:25.442	ID:5	[INFO: App       ] Received sensor value 9 from origin 2 in round 52
+04:25.446	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:30.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 45 in round 53 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:30.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 24 in round 53 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:30.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 60 in round 53 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:30.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 83 in round 53 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:30.326	ID:9	[INFO: App       ] Sent sensor value 86 in round 53 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:30.326	ID:1	[INFO: App       ] Sent sensor value 20 in round 53 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:30.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 44 in round 53 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:30.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 22 in round 53 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:30.339	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:30.344	ID:5	[INFO: App       ] Received sensor value 83 from origin 4 in round 53
+04:30.348	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:30.355	ID:5	[INFO: App       ] Received sensor value 22 from origin 6 in round 53
+04:30.359	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:30.366	ID:5	[INFO: App       ] Received sensor value 45 from origin 7 in round 53
+04:30.370	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:30.387	ID:5	[INFO: App       ] Received sensor value 24 from origin 8 in round 53
+04:30.391	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:30.435	ID:5	[INFO: App       ] Received sensor value 60 from origin 3 in round 53
+04:30.439	ID:5	[INFO: App       ] Thus received 5 values in this round
+04:35.326	ID:4	[INFO: App       ] Sent sensor value 6 in round 54 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:35.326	ID:7	[INFO: App       ] Sent sensor value 0 in round 54 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:35.326	ID:9	[INFO: App       ] Sent sensor value 7 in round 54 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:35.326	ID:3	[INFO: App       ] Sent sensor value 26 in round 54 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:35.326	ID:6	[INFO: App       ] Sent sensor value 93 in round 54 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:35.326	ID:1	[INFO: App       ] Sent sensor value 83 in round 54 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:35.326	ID:2	[INFO: App       ] Sent sensor value 16 in round 54 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:35.326	ID:8	[INFO: App       ] Sent sensor value 43 in round 54 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:35.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:35.341	ID:5	[INFO: App       ] Received sensor value 16 from origin 2 in round 54
+04:35.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:35.357	ID:5	[INFO: App       ] Received sensor value 93 from origin 6 in round 54
+04:35.360	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:35.367	ID:5	[INFO: App       ] Received sensor value 43 from origin 8 in round 54
+04:35.371	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:35.411	ID:5	[INFO: App       ] Received sensor value 6 from origin 4 in round 54
+04:35.414	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:35.427	ID:5	[INFO: App       ] Received sensor value 7 from origin 9 in round 54
+04:35.431	ID:5	[INFO: App       ] Thus received 5 values in this round
+04:35.438	ID:5	[INFO: App       ] Received sensor value 0 from origin 7 in round 54
+04:35.442	ID:5	[INFO: App       ] Thus received 6 values in this round
+04:35.466	ID:5	[INFO: App       ] Received sensor value 83 from origin 1 in round 54
+04:35.470	ID:5	[INFO: App       ] Thus received 7 values in this round
+04:40.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 3 in round 55 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:40.326	ID:1	[INFO: App       ] Sent sensor value 80 in round 55 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:40.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 46 in round 55 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:40.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 70 in round 55 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:40.326	ID:9	[INFO: App       ] Sent sensor value 74 in round 55 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:40.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 87 in round 55 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:40.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 10 in round 55 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:40.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 56 in round 55 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:40.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:40.341	ID:5	[INFO: App       ] Received sensor value 10 from origin 8 in round 55
+04:40.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:40.352	ID:5	[INFO: App       ] Received sensor value 46 from origin 4 in round 55
+04:40.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:40.363	ID:5	[INFO: App       ] Received sensor value 80 from origin 1 in round 55
+04:40.367	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:40.480	ID:5	[INFO: App       ] Received sensor value 3 from origin 7 in round 55
+04:40.484	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:45.326	ID:3	0505.0500.0574.1200[INFO: App       ] Sent sensor value 4 in round 56 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:45.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 46 in round 56 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:45.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 83 in round 56 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:45.326	ID:7	[INFO: App       ] Sent sensor value 41 in round 56 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:45.326	ID:4	[INFO: App       ] Sent sensor value 27 in round 56 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:45.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 27 in round 56 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:45.326	ID:8	[INFO: App       ] Sent sensor value 17 in round 56 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:45.326	ID:9	[INFO: App       ] Sent sensor value 76 in round 56 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:45.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:45.341	ID:5	[INFO: App       ] Received sensor value 27 from origin 2 in round 56
+04:45.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:45.352	ID:5	[INFO: App       ] Received sensor value 27 from origin 4 in round 56
+04:45.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:45.365	ID:5	[INFO: App       ] Received sensor value 17 from origin 8 in round 56
+04:45.369	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:45.376	ID:5	[INFO: App       ] Received sensor value 41 from origin 7 in round 56
+04:45.380	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:50.326	ID:3	[INFO: App       ] Sent sensor value 6 in round 57 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:50.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 17 in round 57 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:50.326	ID:7	[INFO: App       ] Sent sensor value 90 in round 57 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:50.326	ID:4	[INFO: App       ] Sent sensor value 63 in round 57 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:50.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 50 in round 57 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:50.326	ID:9	[INFO: App       ] Sent sensor value 94 in round 57 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:50.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 22 in round 57 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:50.326	ID:8	[INFO: App       ] Sent sensor value 44 in round 57 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:50.343	ID:5	[INFO: App       ] Received sensor value 4 from origin 3 in round 56
+04:50.347	ID:5	[INFO: App       ] Thus received 5 values in this round
+04:50.353	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:50.358	ID:5	[INFO: App       ] Received sensor value 22 from origin 2 in round 57
+04:50.362	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:50.404	ID:5	[INFO: App       ] Received sensor value 94 from origin 9 in round 57
+04:50.407	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:50.415	ID:5	[INFO: App       ] Received sensor value 6 from origin 3 in round 57
+04:50.419	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:50.428	ID:5	[INFO: App       ] Received sensor value 17 from origin 1 in round 57
+04:50.432	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:50.459	ID:5	[INFO: App       ] Received sensor value 90 from origin 7 in round 57
+04:50.462	ID:5	[INFO: App       ] Thus received 5 values in this round
+04:55.326	ID:7	[INFO: App       ] Sent sensor value 0 in round 58 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:55.326	ID:3	[INFO: App       ] Sent sensor value 17 in round 58 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:55.326	ID:9	[INFO: App       ] Sent sensor value 56 in round 58 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:55.326	ID:2	[INFO: App       ] Sent sensor value 82 in round 58 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:55.326	ID:4	[INFO: App       ] Sent sensor value 82 in round 58 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:55.326	ID:1	[INFO: App       ] Sent sensor value 74 in round 58 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:55.326	ID:8	[INFO: App       ] Sent sensor value 79 in round 58 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:55.326	ID:6	[INFO: App       ] Sent sensor value 65 in round 58 to parent node 0505.0500.0574.1200[INFO: App       ] 
+04:55.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+04:55.341	ID:5	[INFO: App       ] Received sensor value 65 from origin 6 in round 58
+04:55.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+04:55.352	ID:5	[INFO: App       ] Received sensor value 0 from origin 7 in round 58
+04:55.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+04:55.474	ID:5	[INFO: App       ] Received sensor value 82 from origin 2 in round 58
+04:55.478	ID:5	[INFO: App       ] Thus received 3 values in this round
+04:55.490	ID:5	[INFO: App       ] Received sensor value 74 from origin 1 in round 58
+04:55.494	ID:5	[INFO: App       ] Thus received 4 values in this round
+04:55.500	ID:5	[INFO: App       ] Received sensor value 65 from origin 6 in round 58
+04:55.504	ID:5	[INFO: App       ] Thus received 5 values in this round
+05:00.326	ID:1	[INFO: App       ] Sent sensor value 3 in round 59 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:00.326	ID:3	[INFO: App       ] Sent sensor value 0 in round 59 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:00.326	ID:7	0505.0500.0574.1200[INFO: App       ] Sent sensor value 27 in round 59 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:00.326	ID:4	[INFO: App       ] Sent sensor value 29 in round 59 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:00.326	ID:8	[INFO: App       ] Sent sensor value 87 in round 59 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:00.326	ID:6	[INFO: App       ] Sent sensor value 31 in round 59 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:00.326	ID:9	[INFO: App       ] Sent sensor value 90 in round 59 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:00.326	ID:2	[INFO: App       ] Sent sensor value 86 in round 59 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:00.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+05:00.341	ID:5	[INFO: App       ] Received sensor value 31 from origin 6 in round 59
+05:00.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+05:00.352	ID:5	[INFO: App       ] Received sensor value 86 from origin 2 in round 59
+05:00.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+05:00.388	ID:5	[INFO: App       ] Received sensor value 27 from origin 7 in round 59
+05:00.392	ID:5	[INFO: App       ] Thus received 3 values in this round
+05:00.399	ID:5	[INFO: App       ] Received sensor value 90 from origin 9 in round 59
+05:00.403	ID:5	[INFO: App       ] Thus received 4 values in this round
+05:00.412	ID:5	[INFO: App       ] Received sensor value 87 from origin 8 in round 59
+05:00.416	ID:5	[INFO: App       ] Thus received 5 values in this round
+05:00.459	ID:5	[INFO: App       ] Received sensor value 0 from origin 3 in round 59
+05:00.462	ID:5	[INFO: App       ] Thus received 6 values in this round
+05:00.497	ID:5	[INFO: App       ] Received sensor value 3 from origin 1 in round 59
+05:00.501	ID:5	[INFO: App       ] Thus received 7 values in this round
+05:05.326	ID:3	[INFO: App       ] Sent sensor value 48 in round 60 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:05.326	ID:8	0505.0500.0574.1200[INFO: App       ] Sent sensor value 69 in round 60 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:05.326	ID:1	0505.0500.0574.1200[INFO: App       ] Sent sensor value 41 in round 60 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:05.326	ID:2	0505.0500.0574.1200[INFO: App       ] Sent sensor value 21 in round 60 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:05.326	ID:9	[INFO: App       ] Sent sensor value 42 in round 60 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:05.326	ID:7	[INFO: App       ] Sent sensor value 67 in round 60 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:05.326	ID:4	0505.0500.0574.1200[INFO: App       ] Sent sensor value 50 in round 60 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:05.326	ID:6	0505.0500.0574.1200[INFO: App       ] Sent sensor value 10 in round 60 to parent node 0505.0500.0574.1200[INFO: App       ] 
+05:05.336	ID:5	[INFO: App       ] Reset numMessagesRecievedInCurrentRound
+05:05.341	ID:5	[INFO: App       ] Received sensor value 50 from origin 4 in round 60
+05:05.345	ID:5	[INFO: App       ] Thus received 1 values in this round
+05:05.352	ID:5	[INFO: App       ] Received sensor value 69 from origin 8 in round 60
+05:05.356	ID:5	[INFO: App       ] Thus received 2 values in this round
+05:05.407	ID:5	[INFO: App       ] Received sensor value 67 from origin 7 in round 60
+05:05.411	ID:5	[INFO: App       ] Thus received 3 values in this round
+05:05.419	ID:5	[INFO: App       ] Received sensor value 10 from origin 6 in round 60
+05:05.423	ID:5	[INFO: App       ] Thus received 4 values in this round
+05:05.435	ID:5	[INFO: App       ] Received sensor value 42 from origin 9 in round 60
+05:05.439	ID:5	[INFO: App       ] Thus received 5 values in this round
+05:05.505	ID:5	[INFO: App       ] Received sensor value 48 from origin 3 in round 60
+05:05.509	ID:5	[INFO: App       ] Thus received 6 values in this round
