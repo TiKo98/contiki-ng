@@ -72,7 +72,8 @@ void input_callback(const void *data, uint16_t len,
     memcpy(&count, data, sizeof(count));
     LOG_INFO("Received %u from ", count);
     LOG_INFO_LLADDR(src);
-    LOG_INFO_("\n");
+    LOG_INFO_("\n Dest was ");
+    LOG_INFO_LLADDR(dest);
   }
 }
 /*---------------------------------------------------------------------------*/
