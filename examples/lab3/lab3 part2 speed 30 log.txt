@@ -1,0 +1,304 @@
+00:00.502	ID:5	[INFO: Main      ] Starting Contiki-NG-lab2_submission-3-g74a8d59b1-dirty
+00:00.505	ID:5	[INFO: Main      ] - Routing: nullrouting
+00:00.507	ID:5	[INFO: Main      ] - Net: nullnet
+00:00.509	ID:5	[INFO: Main      ] - MAC: CSMA
+00:00.512	ID:5	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.516	ID:5	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.518	ID:5	[INFO: Main      ] Node ID: 5
+00:00.523	ID:2	[INFO: Main      ] Starting Contiki-NG-lab2_submission-3-g74a8d59b1-dirty
+00:00.524	ID:5	[INFO: Main      ] Link-layer address: 0505.0500.0574.1200
+00:00.526	ID:2	[INFO: Main      ] - Routing: nullrouting
+00:00.527	ID:5	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.528	ID:2	[INFO: Main      ] - Net: nullnet
+00:00.530	ID:2	[INFO: Main      ] - MAC: CSMA
+00:00.531	ID:5	[INFO: App       ] I am an access-point node with id 5
+00:00.533	ID:2	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.537	ID:2	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.537	ID:6	[INFO: Main      ] Starting Contiki-NG-lab2_submission-3-g74a8d59b1-dirty
+00:00.539	ID:2	[INFO: Main      ] Node ID: 2
+00:00.540	ID:6	[INFO: Main      ] - Routing: nullrouting
+00:00.543	ID:6	[INFO: Main      ] - Net: nullnet
+00:00.545	ID:2	[INFO: Main      ] Link-layer address: 0202.0200.0274.1200
+00:00.545	ID:6	[INFO: Main      ] - MAC: CSMA
+00:00.548	ID:2	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.548	ID:6	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.552	ID:6	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.552	ID:2	[INFO: App       ] I am an access-point node with id 2
+00:00.554	ID:6	[INFO: Main      ] Node ID: 6
+00:00.559	ID:6	[INFO: Main      ] Link-layer address: 0606.0600.0674.1200
+00:00.563	ID:6	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.567	ID:6	[INFO: App       ] I am an access-point node with id 6
+00:00.635	ID:4	[INFO: Main      ] Starting Contiki-NG-lab2_submission-3-g74a8d59b1-dirty
+00:00.638	ID:4	[INFO: Main      ] - Routing: nullrouting
+00:00.640	ID:4	[INFO: Main      ] - Net: nullnet
+00:00.642	ID:4	[INFO: Main      ] - MAC: CSMA
+00:00.646	ID:4	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.649	ID:4	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.651	ID:4	[INFO: Main      ] Node ID: 4
+00:00.657	ID:4	[INFO: Main      ] Link-layer address: 0404.0400.0474.1200
+00:00.660	ID:4	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.664	ID:4	[INFO: App       ] I am an access-point node with id 4
+00:00.669	ID:1	[INFO: Main      ] Starting Contiki-NG-lab2_submission-3-g74a8d59b1-dirty
+00:00.672	ID:1	[INFO: Main      ] - Routing: nullrouting
+00:00.674	ID:1	[INFO: Main      ] - Net: nullnet
+00:00.676	ID:1	[INFO: Main      ] - MAC: CSMA
+00:00.680	ID:1	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.683	ID:1	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.685	ID:1	[INFO: Main      ] Node ID: 1
+00:00.686	ID:3	[INFO: Main      ] Starting Contiki-NG-lab2_submission-3-g74a8d59b1-dirty
+00:00.689	ID:3	[INFO: Main      ] - Routing: nullrouting
+00:00.691	ID:1	[INFO: Main      ] Link-layer address: 0101.0100.0174.1200
+00:00.691	ID:3	[INFO: Main      ] - Net: nullnet
+00:00.693	ID:3	[INFO: Main      ] - MAC: CSMA
+00:00.694	ID:1	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.697	ID:3	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.697	ID:1	[INFO: App       ] I am the mobile node!
+00:00.700	ID:3	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.702	ID:3	[INFO: Main      ] Node ID: 3
+00:00.708	ID:3	[INFO: Main      ] Link-layer address: 0303.0300.0374.1200
+00:00.711	ID:3	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.715	ID:3	[INFO: App       ] I am an access-point node with id 3
+00:01.694	ID:1	[INFO: App       ] Send value 0 to uplink node 0
+00:02.694	ID:1	[INFO: App       ] Send value 1 to uplink node 0
+00:03.694	ID:1	[INFO: App       ] Send value 2 to uplink node 0
+00:04.694	ID:1	[INFO: App       ] Send value 3 to uplink node 2
+00:04.783	ID:2	[INFO: App       ] Logged value 3 from mobile node
+00:05.694	ID:1	[INFO: App       ] Send value 4 to uplink node 2
+00:05.702	ID:2	[INFO: App       ] Logged value 4 from mobile node
+00:06.694	ID:1	[INFO: App       ] Send value 5 to uplink node 2
+00:06.713	ID:2	[INFO: App       ] Logged value 5 from mobile node
+00:07.694	ID:1	[INFO: App       ] Send value 6 to uplink node 2
+00:07.744	ID:2	[INFO: App       ] Logged value 6 from mobile node
+00:08.694	ID:1	[INFO: App       ] Send value 7 to uplink node 2
+00:08.702	ID:2	[INFO: App       ] Logged value 7 from mobile node
+00:09.694	ID:1	[INFO: App       ] Send value 8 to uplink node 2
+00:09.736	ID:2	[INFO: App       ] Logged value 8 from mobile node
+00:10.694	ID:1	[INFO: App       ] Send value 9 to uplink node 2
+00:10.702	ID:2	[INFO: App       ] Logged value 9 from mobile node
+00:11.694	ID:1	[INFO: App       ] Send value 10 to uplink node 2
+00:11.713	ID:2	[INFO: App       ] Logged value 10 from mobile node
+00:12.694	ID:1	[INFO: App       ] Send value 11 to uplink node 2
+00:12.745	ID:2	[INFO: App       ] Logged value 11 from mobile node
+00:13.694	ID:1	[INFO: App       ] Send value 12 to uplink node 2
+00:13.729	ID:2	[INFO: App       ] Logged value 12 from mobile node
+00:14.694	ID:1	[INFO: App       ] Send value 13 to uplink node 2
+00:14.703	ID:2	[INFO: App       ] Logged value 13 from mobile node
+00:15.694	ID:1	[INFO: App       ] Send value 14 to uplink node 2
+00:15.736	ID:2	[INFO: App       ] Logged value 14 from mobile node
+00:16.694	ID:1	[INFO: App       ] Send value 15 to uplink node 2
+00:16.736	ID:2	[INFO: App       ] Logged value 15 from mobile node
+00:17.694	ID:1	[INFO: App       ] Send value 16 to uplink node 2
+00:17.736	ID:2	[INFO: App       ] Logged value 16 from mobile node
+00:18.694	ID:1	[INFO: App       ] Send value 17 to uplink node 2
+00:18.736	ID:2	[INFO: App       ] Logged value 17 from mobile node
+00:19.694	ID:1	[INFO: App       ] Send value 18 to uplink node 2
+00:19.729	ID:2	[INFO: App       ] Logged value 18 from mobile node
+00:20.694	ID:1	[INFO: App       ] Send value 19 to uplink node 2
+00:20.729	ID:2	[INFO: App       ] Logged value 19 from mobile node
+00:21.694	ID:1	[INFO: App       ] Send value 20 to uplink node 2
+00:21.713	ID:2	[INFO: App       ] Logged value 20 from mobile node
+00:22.694	ID:1	[INFO: App       ] Send value 21 to uplink node 2
+00:22.745	ID:2	[INFO: App       ] Logged value 21 from mobile node
+00:23.694	ID:1	[INFO: App       ] Send value 22 to uplink node 2
+00:23.705	ID:2	[INFO: App       ] Logged value 22 from mobile node
+00:24.694	ID:1	[INFO: App       ] Send value 23 to uplink node 2
+00:24.713	ID:2	[INFO: App       ] Logged value 23 from mobile node
+00:25.694	ID:1	[INFO: App       ] Send value 24 to uplink node 2
+00:25.703	ID:2	[INFO: App       ] Logged value 24 from mobile node
+00:26.694	ID:1	[INFO: App       ] Send value 25 to uplink node 2
+00:26.736	ID:2	[INFO: App       ] Logged value 25 from mobile node
+00:27.694	ID:1	[INFO: App       ] Send value 26 to uplink node 2
+00:27.736	ID:2	[INFO: App       ] Logged value 26 from mobile node
+00:28.694	ID:1	[INFO: App       ] Send value 27 to uplink node 2
+00:28.736	ID:2	[INFO: App       ] Logged value 27 from mobile node
+00:29.694	ID:1	[INFO: App       ] Send value 28 to uplink node 2
+00:29.729	ID:2	[INFO: App       ] Logged value 28 from mobile node
+00:30.694	ID:1	[INFO: App       ] Send value 29 to uplink node 2
+00:30.768	ID:2	[INFO: App       ] Logged value 29 from mobile node
+00:31.694	ID:1	[INFO: App       ] Send value 30 to uplink node 2
+00:31.713	ID:2	[INFO: App       ] Logged value 30 from mobile node
+00:32.694	ID:1	[INFO: App       ] Send value 31 to uplink node 2
+00:32.745	ID:2	[INFO: App       ] Logged value 31 from mobile node
+00:33.694	ID:1	[INFO: App       ] Send value 32 to uplink node 3
+00:33.745	ID:3	[INFO: App       ] Logged value 32 from mobile node
+00:34.694	ID:1	[INFO: App       ] Send value 33 to uplink node 3
+00:34.736	ID:3	[INFO: App       ] Logged value 33 from mobile node
+00:35.694	ID:1	[INFO: App       ] Send value 34 to uplink node 3
+00:35.729	ID:3	[INFO: App       ] Logged value 34 from mobile node
+00:36.694	ID:1	[INFO: App       ] Send value 35 to uplink node 3
+00:36.729	ID:3	[INFO: App       ] Logged value 35 from mobile node
+00:37.694	ID:1	[INFO: App       ] Send value 36 to uplink node 3
+00:37.745	ID:3	[INFO: App       ] Logged value 36 from mobile node
+00:38.694	ID:1	[INFO: App       ] Send value 37 to uplink node 3
+00:38.729	ID:3	[INFO: App       ] Logged value 37 from mobile node
+00:39.694	ID:1	[INFO: App       ] Send value 38 to uplink node 3
+00:39.721	ID:3	[INFO: App       ] Logged value 38 from mobile node
+00:40.694	ID:1	[INFO: App       ] Send value 39 to uplink node 3
+00:40.745	ID:3	[INFO: App       ] Logged value 39 from mobile node
+00:41.694	ID:1	[INFO: App       ] Send value 40 to uplink node 3
+00:41.705	ID:3	[INFO: App       ] Logged value 40 from mobile node
+00:42.694	ID:1	[INFO: App       ] Send value 41 to uplink node 3
+00:42.721	ID:3	[INFO: App       ] Logged value 41 from mobile node
+00:43.694	ID:1	[INFO: App       ] Send value 42 to uplink node 3
+00:43.736	ID:3	[INFO: App       ] Logged value 42 from mobile node
+00:44.694	ID:1	[INFO: App       ] Send value 43 to uplink node 3
+00:44.703	ID:3	[INFO: App       ] Logged value 43 from mobile node
+00:45.694	ID:1	[INFO: App       ] Send value 44 to uplink node 3
+00:45.713	ID:3	[INFO: App       ] Logged value 44 from mobile node
+00:46.694	ID:1	[INFO: App       ] Send value 45 to uplink node 3
+00:46.729	ID:3	[INFO: App       ] Logged value 45 from mobile node
+00:47.694	ID:1	[INFO: App       ] Send value 46 to uplink node 3
+00:47.705	ID:3	[INFO: App       ] Logged value 46 from mobile node
+00:48.694	ID:1	[INFO: App       ] Send value 47 to uplink node 3
+00:48.729	ID:3	[INFO: App       ] Logged value 47 from mobile node
+00:49.694	ID:1	[INFO: App       ] Send value 48 to uplink node 3
+00:49.729	ID:3	[INFO: App       ] Logged value 48 from mobile node
+00:50.694	ID:1	[INFO: App       ] Send value 49 to uplink node 3
+00:50.713	ID:3	[INFO: App       ] Logged value 49 from mobile node
+00:51.694	ID:1	[INFO: App       ] Send value 50 to uplink node 3
+00:51.729	ID:3	[INFO: App       ] Logged value 50 from mobile node
+00:52.694	ID:1	[INFO: App       ] Send value 51 to uplink node 3
+00:52.736	ID:3	[INFO: App       ] Logged value 51 from mobile node
+00:53.694	ID:1	[INFO: App       ] Send value 52 to uplink node 3
+00:53.721	ID:3	[INFO: App       ] Logged value 52 from mobile node
+00:54.694	ID:1	[INFO: App       ] Send value 53 to uplink node 3
+00:54.721	ID:3	[INFO: App       ] Logged value 53 from mobile node
+00:55.694	ID:1	[INFO: App       ] Send value 54 to uplink node 3
+00:55.776	ID:3	[INFO: App       ] Logged value 54 from mobile node
+00:56.694	ID:1	[INFO: App       ] Send value 55 to uplink node 3
+00:56.736	ID:3	[INFO: App       ] Logged value 55 from mobile node
+00:57.694	ID:1	[INFO: App       ] Send value 56 to uplink node 3
+00:57.776	ID:3	[INFO: App       ] Logged value 56 from mobile node
+00:58.694	ID:1	[INFO: App       ] Send value 57 to uplink node 3
+00:58.736	ID:3	[INFO: App       ] Logged value 57 from mobile node
+00:59.694	ID:1	[INFO: App       ] Send value 58 to uplink node 3
+00:59.705	ID:3	[INFO: App       ] Logged value 58 from mobile node
+01:00.694	ID:1	[INFO: App       ] Send value 59 to uplink node 3
+01:00.885	ID:3	[INFO: App       ] Logged value 59 from mobile node
+01:01.694	ID:1	[INFO: App       ] Send value 60 to uplink node 0
+01:02.694	ID:1	[INFO: App       ] Send value 61 to uplink node 0
+01:03.694	ID:1	[INFO: App       ] Send value 62 to uplink node 4
+01:03.705	ID:4	[INFO: App       ] Logged value 62 from mobile node
+01:04.694	ID:1	[INFO: App       ] Send value 63 to uplink node 4
+01:04.705	ID:4	[INFO: App       ] Logged value 63 from mobile node
+01:05.694	ID:1	[INFO: App       ] Send value 64 to uplink node 4
+01:05.703	ID:4	[INFO: App       ] Logged value 64 from mobile node
+01:06.694	ID:1	[INFO: App       ] Send value 65 to uplink node 4
+01:06.703	ID:4	[INFO: App       ] Logged value 65 from mobile node
+01:07.694	ID:1	[INFO: App       ] Send value 66 to uplink node 4
+01:07.736	ID:4	[INFO: App       ] Logged value 66 from mobile node
+01:08.694	ID:1	[INFO: App       ] Send value 67 to uplink node 4
+01:08.703	ID:4	[INFO: App       ] Logged value 67 from mobile node
+01:09.694	ID:1	[INFO: App       ] Send value 68 to uplink node 4
+01:09.705	ID:4	[INFO: App       ] Logged value 68 from mobile node
+01:10.694	ID:1	[INFO: App       ] Send value 69 to uplink node 4
+01:10.745	ID:4	[INFO: App       ] Logged value 69 from mobile node
+01:11.694	ID:1	[INFO: App       ] Send value 70 to uplink node 4
+01:11.703	ID:4	[INFO: App       ] Logged value 70 from mobile node
+01:12.694	ID:1	[INFO: App       ] Send value 71 to uplink node 4
+01:12.721	ID:4	[INFO: App       ] Logged value 71 from mobile node
+01:13.694	ID:1	[INFO: App       ] Send value 72 to uplink node 4
+01:13.713	ID:4	[INFO: App       ] Logged value 72 from mobile node
+01:14.694	ID:1	[INFO: App       ] Send value 73 to uplink node 4
+01:14.745	ID:4	[INFO: App       ] Logged value 73 from mobile node
+01:15.694	ID:1	[INFO: App       ] Send value 74 to uplink node 4
+01:15.745	ID:4	[INFO: App       ] Logged value 74 from mobile node
+01:16.694	ID:1	[INFO: App       ] Send value 75 to uplink node 4
+01:16.791	ID:4	[INFO: App       ] Logged value 75 from mobile node
+01:17.694	ID:1	[INFO: App       ] Send value 76 to uplink node 4
+01:17.729	ID:4	[INFO: App       ] Logged value 76 from mobile node
+01:18.694	ID:1	[INFO: App       ] Send value 77 to uplink node 4
+01:18.705	ID:4	[INFO: App       ] Logged value 77 from mobile node
+01:19.694	ID:1	[INFO: App       ] Send value 78 to uplink node 4
+01:19.713	ID:4	[INFO: App       ] Logged value 78 from mobile node
+01:20.694	ID:1	[INFO: App       ] Send value 79 to uplink node 4
+01:20.736	ID:4	[INFO: App       ] Logged value 79 from mobile node
+01:21.694	ID:1	[INFO: App       ] Send value 80 to uplink node 4
+01:21.721	ID:4	[INFO: App       ] Logged value 80 from mobile node
+01:22.694	ID:1	[INFO: App       ] Send value 81 to uplink node 4
+01:22.713	ID:4	[INFO: App       ] Logged value 81 from mobile node
+01:23.694	ID:1	[INFO: App       ] Send value 82 to uplink node 4
+01:23.752	ID:4	[INFO: App       ] Logged value 82 from mobile node
+01:24.694	ID:1	[INFO: App       ] Send value 83 to uplink node 4
+01:24.721	ID:4	[INFO: App       ] Logged value 83 from mobile node
+01:25.694	ID:1	[INFO: App       ] Send value 84 to uplink node 4
+01:25.713	ID:4	[INFO: App       ] Logged value 84 from mobile node
+01:26.694	ID:1	[INFO: App       ] Send value 85 to uplink node 4
+01:26.713	ID:4	[INFO: App       ] Logged value 85 from mobile node
+01:27.694	ID:1	[INFO: App       ] Send value 86 to uplink node 4
+01:27.799	ID:4	[INFO: App       ] Logged value 86 from mobile node
+01:28.694	ID:1	[INFO: App       ] Send value 87 to uplink node 0
+01:28.736	ID:5	[INFO: App       ] Logged value 87 from mobile node
+01:29.694	ID:1	[INFO: App       ] Send value 88 to uplink node 4
+01:29.721	ID:4	[INFO: App       ] Logged value 88 from mobile node
+01:30.694	ID:1	[INFO: App       ] Send value 89 to uplink node 4
+01:31.694	ID:1	[INFO: App       ] Send value 90 to uplink node 4
+01:32.698	ID:1	[INFO: App       ] Send value 91 to uplink node 4
+01:33.694	ID:1	[INFO: App       ] Send value 92 to uplink node 4
+01:34.698	ID:1	[INFO: App       ] Send value 93 to uplink node 4
+01:35.694	ID:1	[INFO: App       ] Send value 94 to uplink node 4
+01:36.694	ID:1	[INFO: App       ] Send value 95 to uplink node 4
+01:37.694	ID:1	[INFO: App       ] Send value 96 to uplink node 4
+01:38.698	ID:1	[INFO: App       ] Send value 97 to uplink node 4
+01:39.694	ID:1	[INFO: App       ] Send value 98 to uplink node 4
+01:40.694	ID:1	[INFO: App       ] Send value 99 to uplink node 4
+01:41.694	ID:1	[INFO: App       ] Send value 100 to uplink node 4
+01:42.698	ID:1	[INFO: App       ] Send value 101 to uplink node 4
+01:43.694	ID:1	[INFO: App       ] Send value 102 to uplink node 4
+01:44.694	ID:1	[INFO: App       ] Send value 103 to uplink node 4
+01:45.694	ID:1	[INFO: App       ] Send value 104 to uplink node 4
+01:46.694	ID:1	[INFO: App       ] Send value 105 to uplink node 4
+01:47.694	ID:1	[INFO: App       ] Send value 106 to uplink node 4
+01:48.698	ID:1	[INFO: App       ] Send value 107 to uplink node 4
+01:49.694	ID:1	[INFO: App       ] Send value 108 to uplink node 4
+01:50.694	ID:1	[INFO: App       ] Send value 109 to uplink node 4
+01:51.694	ID:1	[INFO: App       ] Send value 110 to uplink node 4
+01:52.698	ID:1	[INFO: App       ] Send value 111 to uplink node 4
+01:53.694	ID:1	[INFO: App       ] Send value 112 to uplink node 4
+01:54.694	ID:1	[INFO: App       ] Send value 113 to uplink node 4
+01:55.694	ID:1	[INFO: App       ] Send value 114 to uplink node 4
+01:56.694	ID:1	[INFO: App       ] Send value 115 to uplink node 4
+01:57.694	ID:1	[INFO: App       ] Send value 116 to uplink node 4
+01:58.694	ID:1	[INFO: App       ] Send value 117 to uplink node 4
+01:59.694	ID:1	[INFO: App       ] Send value 118 to uplink node 4
+02:00.694	ID:1	[INFO: App       ] Send value 119 to uplink node 4
+02:01.694	ID:1	[INFO: App       ] Send value 120 to uplink node 4
+02:02.694	ID:1	[INFO: App       ] Send value 121 to uplink node 4
+02:03.694	ID:1	[INFO: App       ] Send value 122 to uplink node 4
+02:04.694	ID:1	[INFO: App       ] Send value 123 to uplink node 4
+02:05.694	ID:1	[INFO: App       ] Send value 124 to uplink node 4
+02:06.698	ID:1	[INFO: App       ] Send value 125 to uplink node 4
+02:07.694	ID:1	[INFO: App       ] Send value 126 to uplink node 4
+02:08.694	ID:1	[INFO: App       ] Send value 127 to uplink node 4
+02:09.694	ID:1	[INFO: App       ] Send value 128 to uplink node 4
+02:10.698	ID:1	[INFO: App       ] Send value 129 to uplink node 4
+02:11.694	ID:1	[INFO: App       ] Send value 130 to uplink node 4
+02:12.694	ID:1	[INFO: App       ] Send value 131 to uplink node 4
+02:13.694	ID:1	[INFO: App       ] Send value 132 to uplink node 4
+02:14.694	ID:1	[INFO: App       ] Send value 133 to uplink node 4
+02:15.694	ID:1	[INFO: App       ] Send value 134 to uplink node 4
+02:16.694	ID:1	[INFO: App       ] Send value 135 to uplink node 4
+02:17.694	ID:1	[INFO: App       ] Send value 136 to uplink node 4
+02:18.694	ID:1	[INFO: App       ] Send value 137 to uplink node 4
+02:19.694	ID:1	[INFO: App       ] Send value 138 to uplink node 4
+02:20.698	ID:1	[INFO: App       ] Send value 139 to uplink node 4
+02:21.694	ID:1	[INFO: App       ] Send value 140 to uplink node 4
+02:22.694	ID:1	[INFO: App       ] Send value 141 to uplink node 4
+02:23.694	ID:1	[INFO: App       ] Send value 142 to uplink node 4
+02:24.694	ID:1	[INFO: App       ] Send value 143 to uplink node 4
+02:25.694	ID:1	[INFO: App       ] Send value 144 to uplink node 4
+02:26.698	ID:1	[INFO: App       ] Send value 145 to uplink node 4
+02:27.694	ID:1	[INFO: App       ] Send value 146 to uplink node 4
+02:28.694	ID:1	[INFO: App       ] Send value 147 to uplink node 4
+02:29.694	ID:1	[INFO: App       ] Send value 148 to uplink node 4
+02:30.694	ID:1	[INFO: App       ] Send value 149 to uplink node 4
+02:31.694	ID:1	[INFO: App       ] Send value 150 to uplink node 4
+02:32.694	ID:1	[INFO: App       ] Send value 151 to uplink node 4
+02:33.694	ID:1	[INFO: App       ] Send value 152 to uplink node 4
+02:34.694	ID:1	[INFO: App       ] Send value 153 to uplink node 4
+02:35.694	ID:1	[INFO: App       ] Send value 154 to uplink node 4
+02:36.694	ID:1	[INFO: App       ] Send value 155 to uplink node 4
+02:37.694	ID:1	[INFO: App       ] Send value 156 to uplink node 4
+02:38.694	ID:1	[INFO: App       ] Send value 157 to uplink node 4
+02:39.694	ID:1	[INFO: App       ] Send value 158 to uplink node 4
+02:40.694	ID:1	[INFO: App       ] Send value 159 to uplink node 4

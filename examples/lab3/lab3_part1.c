@@ -151,7 +151,7 @@ void input_callback(const void *data, uint16_t len,
 
     // Case: Mobile node received a beacon
     if (receivedPayload.type == PAYLOAD_TYPE_BEACON) {  
-      LOG_INFO("Received beacon from %u with number %u while uplink is %u\n", receivedPayload.ap, receivedPayload.value, uplinkNode);
+      // LOG_INFO("Received beacon from %u with number %u while uplink is %u\n", receivedPayload.ap, receivedPayload.value, uplinkNode);
 
       pushToBeaconHistory(receivedPayload.ap, src);
 
@@ -166,7 +166,7 @@ void input_callback(const void *data, uint16_t len,
         nullnet_len = sizeof(payload);
 
         NETSTACK_NETWORK.output(src);
-        LOG_INFO("Sent direct connection request to %u\n", receivedPayload.ap);
+        // LOG_INFO("Sent direct connection request to %u\n", receivedPayload.ap);
         return;
       }
 
@@ -182,7 +182,7 @@ void input_callback(const void *data, uint16_t len,
       nullnet_len = sizeof(payload);
 
       NETSTACK_NETWORK.output(&uplinkNodeAddress);
-      LOG_INFO("Sent disconnection request to %u in order to connect to %u\n", uplinkNode, mostPopularAp.nodeID);
+      // LOG_INFO("Sent disconnection request to %u in order to connect to %u\n", uplinkNode, mostPopularAp.nodeID);
   
       return;
     } 
@@ -194,7 +194,7 @@ void input_callback(const void *data, uint16_t len,
         return;
       }
   
-      LOG_INFO("Access point accepted connection. Uplink node is now %u\n", receivedPayload.ap);
+      // LOG_INFO("Access point accepted connection. Uplink node is now %u\n", receivedPayload.ap);
 
       uplinkNodeAddress = *src;
       uplinkNode = receivedPayload.ap;
@@ -208,7 +208,7 @@ void input_callback(const void *data, uint16_t len,
         LOG_ERR("Access point denied disconnection!\n");
         return;
       }
-      LOG_INFO("Access point %u accepted disconnection\n", receivedPayload.ap);
+      // LOG_INFO("Access point %u accepted disconnection\n", receivedPayload.ap);
 
       // Remove knowledge about the past uplink
       uplinkNode = 0;
@@ -222,7 +222,7 @@ void input_callback(const void *data, uint16_t len,
       nullnet_len = sizeof(payload);
 
       NETSTACK_NETWORK.output(&mostPopularAp.nodeAddress);
-      LOG_INFO("Sent connection request to %u\n", mostPopularAp.nodeID);
+      // LOG_INFO("Sent connection request to %u\n", mostPopularAp.nodeID);
     }
 
     return;
@@ -234,7 +234,7 @@ void input_callback(const void *data, uint16_t len,
 
   // Case: Access point receives connection request from mobile node
   if (receivedPayload.type == PAYLOAD_TYPE_CONNECTION) {
-    LOG_INFO("Mobile node wants to connect to me\n");
+    // LOG_INFO("Mobile node wants to connect to me\n");
 
     // Create packet for connection acknowledgement
     payload.type = PAYLOAD_TYPE_CONNECTION;
@@ -249,7 +249,7 @@ void input_callback(const void *data, uint16_t len,
     isDownLinkConnected = 1;
     leds_on(LEDS_RED);
 
-    LOG_INFO("Sent acknowledgment\n");
+    // LOG_INFO("Sent acknowledgment\n");
     return;
   }
 
@@ -273,7 +273,7 @@ void input_callback(const void *data, uint16_t len,
 
     NETSTACK_NETWORK.output(src);
 
-    LOG_INFO("Accepted disconnection of mobile node\n");
+    // LOG_INFO("Accepted disconnection of mobile node\n");
     isDownLinkConnected = 0;
     leds_off(LEDS_RED);
 
@@ -308,7 +308,7 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
       payload.value= counter;
       payload.ap = uplinkNode;
 
-      // LOG_INFO("Send value %u to uplink node %u\n", counter, uplinkNode);
+      LOG_INFO("Send value %u to uplink node %u\n", counter, uplinkNode);
 
       // Send value to uplink
       NETSTACK_NETWORK.output(&uplinkNodeAddress);
