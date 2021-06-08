@@ -171,7 +171,7 @@ void input_callback(const void *data, uint16_t len,
       }
 
       // Return early if the most popular ap already is our uplink node
-      if (mostPopularAp.nodeID == uplinkNode) {
+      if (mostPopularAp.nodeID == uplinkNode || mostPopularAp.nodeID == 0) {
         return;
       }
 
@@ -182,7 +182,7 @@ void input_callback(const void *data, uint16_t len,
       nullnet_len = sizeof(payload);
 
       NETSTACK_NETWORK.output(&uplinkNodeAddress);
-      LOG_INFO("Sent disconnection request to %u\n", uplinkNode);
+      LOG_INFO("Sent disconnection request to %u in order to connect to %u\n", uplinkNode, mostPopularAp.nodeID);
   
       return;
     } 
