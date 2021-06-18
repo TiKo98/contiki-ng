@@ -1,28 +1,34 @@
 """
-Script to create the dummy data used for proof of concept.
-Each function gets the time since the programm startet in full miliseconds
-and returns the angle at which the oar sits. 
-Angles can be shifted by a constant offset.
+Creates a file of dummy data. First Column with timestamps, second column with angles
 """
+import dummy_data_functions as ddf
 
-def ideal_stroke(time, offset = 0):
-    """
-    Ideal stroke with constant acceleration. 20 Strokes/minute
-    1 second drive, 2 seconds free-wheeling
-    """
-    acc_drive = 1.8E-4
-    acc_fw = -4.5E-5
-    off_fw = 90
+def ms_to_time(ms):
+    """Creates a Timestamp string from given number of miliseconds"""
+    miliseconds = ms % 1000
+    seconds = int(ms / 1000) % 60
+    minutes = int((ms / 1000) / 60)
 
-    stroketime = time % 3000
-    if stroketime <= 1000:
-        return 0.5 * acc_drive * (stroketime**2) + offset
-    else:
-        return 0.5 * acc_fw * ((stroketime - 1000)**2) + off_fw + offset
+    # Timestring format: MM:SS.mmm
+    miliseconds_string = "0" * (3 - len(str(miliseconds))) + str(miliseconds)
+    seconds_string = "0" * (2 - len(str(seconds))) + str(seconds)
+    minutes_string = "0" * (2 - len(str(minutes))) + str(minutes)
 
-def slow_realistic(time, offset = 0):
-    """
-    Ideal realistic stroke with plateau. 20 Strokes/minute
-    1 second drive, 2 seconds free-wheeling
-    """
-    pass
+    return minutes_string + ":" + seconds_string + "." + miliseconds_string
+
+if __name__ == "__main__":
+    number_of_strokes = 20
+    time_per_stroke = 3000
+    measurements_per_second = 50
+    duration = number_of_strokes * time_per_stroke
+
+    # timestamps = [ms_to_time(t) for t in range(duration)]
+
+    # angles = [ddf.ideal_stroke(t) for t in range(duration)]
+    f = open("./oarlock project/dummy_data/ideal_only.txt", "wt")
+    for i in range(0, duration, int(1000 / measurements_per_second)):
+        timestamp = ms_to_time(i)
+        angle = ddf.ideal_stroke(i)
+        line = timestamp + "\t" + str(angle) + "\n"
+        f.write(line)
+    f.close()
