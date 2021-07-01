@@ -15,7 +15,6 @@
 #define MEASUREMENT_BUFFER_LENGTH 20
 #define DATA_POINTS_PER_TRANSMISSION 5
 #define MEASUREMENT_INTERVAL RTIMER_SECOND / 50
-#define TRANSMISSION_INTERVAL RTIMER_SECOND / 10
 #define RTIMER_MILISECOND RTIMER_SECOND / 1000
 static linkaddr_t dest_addr =         {{ 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }};
 
@@ -86,6 +85,7 @@ void readMeasurementBufferIntoPayload()
   int measurementCounter = measurementBufferCounter - DATA_POINTS_PER_TRANSMISSION;
   if (measurementCounter < 0) {
     LOG_ERR("Whopsi, there are not enough data points recorded to make a full transmission!\n");
+    return;
   }
 
   do {
@@ -115,6 +115,13 @@ void input_callback(const void *data, uint16_t len,
 
 static struct rtimer real_timer;
 
+void sendMeasurementsToBaseStation() {
+  readMeasurementBufferIntoPayload();
+  LOG_INFO("Send to base station\n");
+  NETSTACK_NETWORK.output(&dest_addr);
+  measurementBufferCounter = 0;
+}
+
 void readSensorValueAndPersist() {
   // First, reset the timer for the next measurement
   rtimer_clock_t time_now = RTIMER_NOW();
@@ -128,7 +135,14 @@ void readSensorValueAndPersist() {
 
   // Persist measurement if buffer
   pushToMeasurementBuffer(currentMiliseconds, measurement);  
+
+  // If buffer holds enough data points, send them to the base station
+  if (measurementBufferCounter > DATA_POINTS_PER_TRANSMISSION) {
+    sendMeasurementsToBaseStation();
+  }
 }
+
+
 
 PROCESS_THREAD(nullnet_example_process, ev, data)
 {
@@ -139,9 +153,19 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
 
   LOG_INFO("RTIMER_SECOND: %u ticks\n", RTIMER_SECOND);
   LOG_INFO("MEASUREMENT_INTERVAL: %u ticks\n", MEASUREMENT_INTERVAL);
-  LOG_INFO("TRANSMISSION_INTERVAL: %u ticks\n", TRANSMISSION_INTERVAL);
+  LOG_INFO("DATA_POINTS_PER_TRANSMISSION: %u ticks\n", DATA_POINTS_PER_TRANSMISSION);
 
-  readSensorValueAndPersist();
+  /* Initialize NullNet */
+  nullnet_buf = (uint8_t *)&count;
+  nullnet_len = sizeof(count);
+  nullnet_set_input_callback(input_callback);
+
+  if (!linkaddr_cmp(&dest_addr, &linkaddr_node_addr)) {
+    // This call is basically the beginning of a loop because it sets an rtimer for itself
+    readSensorValueAndPersist();
+  }
+  
+
 
   while(1) {
     PROCESS_YIELD();
