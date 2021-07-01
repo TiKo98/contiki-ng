@@ -75,8 +75,8 @@ void pushToMeasurementBuffer(unsigned long timestamp, double measurement)
 {
   struct DataPoint newDataPoint = {timestamp, measurement};
   measurementBuffer[measurementBufferCounter] = newDataPoint;
+  LOG_INFO("Saved data point %u / %d into buffer at index %u\n", (unsigned) timestamp, (int) measurement, measurementBufferCounter);
   measurementBufferCounter++; // If this leads to an index out of bound, then you have made a mistake elsewhere because the buffer should be emptied before reaching its full size.
-  LOG_INFO("Saved data point %u / %d into buffer\n", (unsigned) timestamp, (int) measurement);
 }
 
 void readMeasurementBufferIntoPayload()
@@ -91,6 +91,7 @@ void readMeasurementBufferIntoPayload()
   do {
     payload.measurements[transmissionCounter] = measurementBuffer[measurementCounter];
     transmissionCounter++;
+    measurementCounter++;
   } while(transmissionCounter < DATA_POINTS_PER_TRANSMISSION);
 }
 
@@ -101,30 +102,34 @@ void readMeasurementBufferIntoPayload()
 void input_callback(const void *data, uint16_t len,
   const linkaddr_t *src, const linkaddr_t *dest)
 {
-  if(len == sizeof(unsigned)) {
-    unsigned count;
-    memcpy(&count, data, sizeof(count));
-    LOG_INFO("Received %u from ", count);
-    LOG_INFO_LLADDR(src);
-    LOG_INFO_("\n");
+  if(len == sizeof(struct Payload)) {
+    // Copy payload from buffer in dedicated variable here
+    struct Payload request;
+    memcpy(&request, data, sizeof(struct Payload));
+
+    LOG_INFO("Received values ");
+    unsigned i;
+    for (i = 0; i < DATA_POINTS_PER_TRANSMISSION; i++) {
+      LOG_INFO("%d ", (int) request.measurements[i].value);
+    }
+    LOG_INFO("\n");
+
+    return;
   }
 }
 /*---------------------------------------------------------------------------*/
 
 static struct rtimer real_timer;
-static unsigned count = 0;
 
 void sendMeasurementsToBaseStation() {
-  readMeasurementBufferIntoPayload();
-  LOG_INFO("Send to base station\n");
-  
+  readMeasurementBufferIntoPayload();  
 
   // Copy data into transmission buffer
-  nullnet_buf = (uint8_t *)&count;
-  nullnet_len = sizeof(count);
-  count++;
+  nullnet_buf = (uint8_t *)&payload;
+  nullnet_len = sizeof(payload);
   
   // Transmit
+  LOG_INFO("Send to base station\n");
   NETSTACK_NETWORK.output(&dest_addr);
 
   // Reset the buffer
@@ -146,7 +151,7 @@ void readSensorValueAndPersist() {
   pushToMeasurementBuffer(currentMiliseconds, measurement);  
 
   // If buffer holds enough data points, send them to the base station
-  if (measurementBufferCounter > DATA_POINTS_PER_TRANSMISSION) {
+  if (measurementBufferCounter >= DATA_POINTS_PER_TRANSMISSION) {
     sendMeasurementsToBaseStation();
   }
 }
