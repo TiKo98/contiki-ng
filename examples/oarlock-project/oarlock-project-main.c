@@ -14,6 +14,9 @@
 #define SEND_INTERVAL (8 * CLOCK_SECOND)
 #define MEASUREMENT_BUFFER_LENGTH 20
 #define DATA_POINTS_PER_TRANSMISSION 5
+#define MEASUREMENT_INTERVAL RTIMER_SECOND / 50
+#define TRANSMISSION_INTERVAL RTIMER_SECOND / 10
+#define RTIMER_MILISECOND RTIMER_SECOND / 1000
 static linkaddr_t dest_addr =         {{ 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }};
 
 
@@ -27,7 +30,7 @@ Ideal stroke with constant acceleration. 20 Strokes/minute
 
 No business logic in here, just plain mathematics for faking sensor values.
 */
-double idealStroke(unsigned time, double offset) {
+double idealStroke(unsigned long time, double offset) {
   double aDrive = 0.00018;
   double aFw = -0.000045;
   double offFw = 90;
@@ -52,7 +55,7 @@ AUTOSTART_PROCESSES(&nullnet_example_process);
 /*--------------------------- Data Repository -------------------------------*/
 
 struct DataPoint {
-  unsigned timestamp;
+  unsigned long timestamp;
   double value;
 };
 
@@ -69,12 +72,12 @@ static unsigned measurementBufferCounter = 0;
 Call this function when you recorded a value from the sensor. 
 It will store the value with its timestamp in the measurementBuffer.
 */
-void pushToMeasurementBuffer
-(timestamp, measurement)
+void pushToMeasurementBuffer(unsigned long timestamp, double measurement)
 {
   struct DataPoint newDataPoint = {timestamp, measurement};
   measurementBuffer[measurementBufferCounter] = newDataPoint;
   measurementBufferCounter++; // If this leads to an index out of bound, then you have made a mistake elsewhere because the buffer should be emptied before reaching its full size.
+  LOG_INFO("Saved data point %u / %d into buffer\n", (unsigned) timestamp, (int) measurement);
 }
 
 void readMeasurementBufferIntoPayload()
@@ -109,12 +112,41 @@ void input_callback(const void *data, uint16_t len,
   }
 }
 /*---------------------------------------------------------------------------*/
+
+static struct rtimer real_timer;
+
+void readSensorValueAndPersist() {
+  // First, reset the timer for the next measurement
+  rtimer_clock_t time_now = RTIMER_NOW();
+  rtimer_set(&real_timer, time_now + MEASUREMENT_INTERVAL, 1, readSensorValueAndPersist, NULL);
+
+  // We cannot use the rtimer module for more exact timestamps, because it overflows after approximately 2 seconds
+  unsigned long currentMiliseconds = (clock_time() * 1000) / CLOCK_SECOND;
+
+  // Mock reading data from the sensor
+  double measurement = idealStroke(currentMiliseconds, 0);
+
+  // Persist measurement if buffer
+  pushToMeasurementBuffer(currentMiliseconds, measurement);  
+}
+
 PROCESS_THREAD(nullnet_example_process, ev, data)
 {
   static struct etimer periodic_timer;
   static unsigned count = 0;
 
   PROCESS_BEGIN();
+
+  LOG_INFO("RTIMER_SECOND: %u ticks\n", RTIMER_SECOND);
+  LOG_INFO("MEASUREMENT_INTERVAL: %u ticks\n", MEASUREMENT_INTERVAL);
+  LOG_INFO("TRANSMISSION_INTERVAL: %u ticks\n", TRANSMISSION_INTERVAL);
+
+  readSensorValueAndPersist();
+
+  while(1) {
+    PROCESS_YIELD();
+  }
+
 
   /* Initialize NullNet */
   nullnet_buf = (uint8_t *)&count;
