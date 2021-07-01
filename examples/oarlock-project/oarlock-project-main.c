@@ -101,24 +101,33 @@ void readMeasurementBufferIntoPayload()
 void input_callback(const void *data, uint16_t len,
   const linkaddr_t *src, const linkaddr_t *dest)
 {
-  LOG_INFO("Received something\n");
   if(len == sizeof(unsigned)) {
     unsigned count;
     memcpy(&count, data, sizeof(count));
     LOG_INFO("Received %u from ", count);
     LOG_INFO_LLADDR(src);
-    LOG_INFO_("\n Dest was ");
-    LOG_INFO_LLADDR(dest);
+    LOG_INFO_("\n");
   }
 }
 /*---------------------------------------------------------------------------*/
 
 static struct rtimer real_timer;
+static unsigned count = 0;
 
 void sendMeasurementsToBaseStation() {
   readMeasurementBufferIntoPayload();
   LOG_INFO("Send to base station\n");
+  
+
+  // Copy data into transmission buffer
+  nullnet_buf = (uint8_t *)&count;
+  nullnet_len = sizeof(count);
+  count++;
+  
+  // Transmit
   NETSTACK_NETWORK.output(&dest_addr);
+
+  // Reset the buffer
   measurementBufferCounter = 0;
 }
 
@@ -146,9 +155,6 @@ void readSensorValueAndPersist() {
 
 PROCESS_THREAD(nullnet_example_process, ev, data)
 {
-  static struct etimer periodic_timer;
-  static unsigned count = 0;
-
   PROCESS_BEGIN();
 
   LOG_INFO("RTIMER_SECOND: %u ticks\n", RTIMER_SECOND);
@@ -156,8 +162,6 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
   LOG_INFO("DATA_POINTS_PER_TRANSMISSION: %u ticks\n", DATA_POINTS_PER_TRANSMISSION);
 
   /* Initialize NullNet */
-  nullnet_buf = (uint8_t *)&count;
-  nullnet_len = sizeof(count);
   nullnet_set_input_callback(input_callback);
 
   if (!linkaddr_cmp(&dest_addr, &linkaddr_node_addr)) {
@@ -166,34 +170,8 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
   }
   
 
-
   while(1) {
     PROCESS_YIELD();
-  }
-
-
-  /* Initialize NullNet */
-  nullnet_buf = (uint8_t *)&count;
-  nullnet_len = sizeof(count);
-  nullnet_set_input_callback(input_callback);
-
-  if(!linkaddr_cmp(&dest_addr, &linkaddr_node_addr)) {
-    etimer_set(&periodic_timer, SEND_INTERVAL);
-    while(1) {
-      PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
-      LOG_INFO("Sending %u to ", count);
-      LOG_INFO_LLADDR(&dest_addr);
-      LOG_INFO_("\n");
-
-      unsigned timestamp = count * 20;
-      double measurementValue = idealStroke(timestamp, 0);
-      LOG_INFO("Ideal stroke would be at %d\n", (int) (10 * measurementValue));
-      pushToMeasurementBuffer(timestamp, measurementValue);
-
-      NETSTACK_NETWORK.output(&dest_addr);
-      count++;
-      etimer_reset(&periodic_timer);
-    }
   }
 
   PROCESS_END();
