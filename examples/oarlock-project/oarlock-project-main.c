@@ -96,6 +96,39 @@ void readMeasurementBufferIntoPayload()
 }
 
 
+/*------------------------ Data Evaluation Functions -----------------------*/
+
+static unsigned long lastTimestamp = 0;
+static double lastAngle = -999;
+static double lastVelocity = -999;
+
+double calcAccelerationFromAngle(unsigned long newTimestamp, double newAngle) {
+  // If this is the first measurement, set this as the las_angle and return invalid
+  if (lastAngle == -999) {
+    lastAngle = newAngle;
+    lastTimestamp = newTimestamp;
+    return -999; // Last velocity is still invalid at this point in time
+  }
+
+  // There was a previous angle. So calculate the velocity using the differential quotient 
+  double angleDifference = newAngle - lastAngle;
+  double timeDifference = (newTimestamp - lastTimestamp) / 1000.0; // Divide by 1000 to use normal seconds when differentiating by time;
+  double velocity = angleDifference / timeDifference;
+  lastAngle = newAngle;
+  lastTimestamp = newTimestamp;
+
+  // If there is no previously calculated velocity, then set it and return invalid
+  if (lastVelocity == -999) {
+    lastVelocity = velocity;
+    return -999;
+  }
+
+  // There was a previous velocity. So use it to calculate the acceleration
+  double velocityDifference = velocity - lastVelocity;
+  double acceleration = velocityDifference / timeDifference;
+  lastVelocity = velocity;
+  return acceleration;
+}
 
 
 /*---------------------------------------------------------------------------*/
@@ -145,10 +178,18 @@ void readSensorValueAndPersist() {
   unsigned long currentMiliseconds = (clock_time() * 1000) / CLOCK_SECOND;
 
   // Mock reading data from the sensor
-  double measurement = idealStroke(currentMiliseconds, 0);
+  double currentAngle = idealStroke(currentMiliseconds, 0);
+  LOG_INFO("Current angle is (int) %d\n", (int) currentAngle);
+
+  // Translate angle into acceleration
+  double currentAcceleration = calcAccelerationFromAngle(currentMiliseconds, currentAngle);
+  LOG_INFO("Acceleration is (int) %d\n", (int) currentAcceleration);
+  if (currentAcceleration < -990) {
+    return;
+  }
 
   // Persist measurement if buffer
-  pushToMeasurementBuffer(currentMiliseconds, measurement);  
+  pushToMeasurementBuffer(currentMiliseconds, currentAcceleration);  
 
   // If buffer holds enough data points, send them to the base station
   if (measurementBufferCounter >= DATA_POINTS_PER_TRANSMISSION) {
