@@ -70,12 +70,38 @@ def endzug_betont(time, offset = 0):
     else:
         t = t - 1000
         return a_fw * t**3 + b_fw * t**2 + d_fw + offset
+
+def ideal_acceleration(time):
+
+    a_drive = 1.8E-4
+    a_fw = -4.5E-5
+    t = time % 3000
+
+    return a_drive if t <= 1000 else a_fw
+
+def realistic_acceleration(time):
+    a = -4.582541E-26
+    k = 1.79E-4
+    t = time % 3000
+    acc = a*(t-500)**8+k
+
+    return acc if t <= 1000 else -1 * k
+
+def endzug_acceleration(time):
+    a = -2.497E-26
+    b = 4.361E-8
+    c = 9.7539E-5
+    t = time % 3000
+    acc = a*(t-500)**8+b*t+c
+
+    return acc if t <= 1000 else -1 * c
+
     
 if __name__ == "__main__":
-    # x_vals = list(range(0, 1000))
-    # f_vals = [endzug_betont(t) for t in x_vals]
+    x_vals = list(range(0, 1020, 20))
+    f_vals = [realistic_acceleration(t) for t in x_vals]
 
-    # plt.plot(x_vals, f_vals, "bo")
-    # plt.show()
-    print(endzug_betont(1000))
+    plt.plot(x_vals, f_vals, "bo")
+    plt.show()
+    # print(endzug_betont(1000))
     
