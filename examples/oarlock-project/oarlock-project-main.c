@@ -16,6 +16,7 @@
 #define DATA_POINTS_PER_TRANSMISSION 5
 #define MEASUREMENT_INTERVAL RTIMER_SECOND / 50
 #define RTIMER_MILISECOND RTIMER_SECOND / 1000
+#define USE_IDEAL_STROKE 1
 static linkaddr_t dest_addr =         {{ 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }};
 
 
@@ -39,6 +40,43 @@ double idealStroke(unsigned long time, double offset) {
     return timeSinceStrokeStart * 0.5 * aDrive * timeSinceStrokeStart + offset; // Do not reduce to timeSinceStrokeStart**2 -> Overflow!
   } else {
     return (timeSinceStrokeStart - 1000) * 0.5 * aFw * (timeSinceStrokeStart - 1000) + offFw + offset; // Do not reduce. Be aware of overflow
+  }
+}
+
+int int_pow(int base, int exp)
+{
+    int result = 1;
+    while (exp)
+    {
+        if (exp % 2)
+           result *= base;
+        exp /= 2;
+        base *= base;
+    }
+    return result;
+}
+
+/*
+Ideal realistic stroke with plateau. 20 Strokes/minute
+1 second drive, 2 seconds free-wheeling
+*/
+double slowRealisticStroke(unsigned long time, double offset) {
+  long double aDrive = -0.00000000000000000000000004582541;
+
+  double kDrive =  0.000179;
+
+  double aFw = 0.0000000225;
+  double bFw = -0.0000675;
+  // cFw = 0;
+  double dFw = 90;
+
+  unsigned timeSinceStrokeStart = time % msPerStroke;
+  if (timeSinceStrokeStart <= 1000) {
+    return (aDrive / 90) * int_pow(timeSinceStrokeStart - 500, 10) + 0.5 * kDrive * int_pow(timeSinceStrokeStart, 2) + offset;
+  } else {
+    unsigned long timeSinceFreeWheeling = timeSinceStrokeStart - 1000;
+    double firstSummand = timeSinceFreeWheeling * aFw * timeSinceFreeWheeling * timeSinceFreeWheeling;
+    return firstSummand + bFw * int_pow(timeSinceFreeWheeling, 2) + dFw + offset;
   }
 }
 
@@ -178,7 +216,12 @@ void readSensorValueAndPersist() {
   unsigned long currentMiliseconds = (clock_time() * 1000) / CLOCK_SECOND;
 
   // Mock reading data from the sensor
-  double currentAngle = idealStroke(currentMiliseconds, 0);
+  double currentAngle;
+  if (USE_IDEAL_STROKE) {
+    currentAngle = idealStroke(currentMiliseconds, 0);
+  } else {
+    currentAngle = slowRealisticStroke(currentMiliseconds, 0);
+  }
   LOG_INFO("Current angle is (int) %d\n", (int) currentAngle);
 
   // Translate angle into acceleration
