@@ -178,13 +178,10 @@ void input_callback(const void *data, uint16_t len,
     struct Payload request;
     memcpy(&request, data, sizeof(struct Payload));
 
-    LOG_INFO("Received values ");
-    unsigned i;
-    for (i = 0; i < DATA_POINTS_PER_TRANSMISSION; i++) {
-      LOG_INFO("%d ", (int) request.measurements[i].value);
-    }
+    LOG_INFO("Received values from ");
+    LOG_INFO_LLADDR(src);
     LOG_INFO("\n");
-
+  
     return;
   }
 }
@@ -222,11 +219,11 @@ void readSensorValueAndPersist() {
   } else {
     currentAngle = slowRealisticStroke(currentMiliseconds, 0);
   }
-  LOG_INFO("Current angle is (int) %d\n", (int) currentAngle);
+  // LOG_INFO("Current angle is (int) %d\n", (int) currentAngle);
 
   // Translate angle into acceleration
   double currentAcceleration = calcAccelerationFromAngle(currentMiliseconds, currentAngle);
-  LOG_INFO("Acceleration is (int) %d\n", (int) currentAcceleration);
+  // LOG_INFO("Acceleration is (int) %d\n", (int) currentAcceleration);
   if (currentAcceleration < -990) {
     return;
   }
@@ -246,7 +243,6 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
 {
   PROCESS_BEGIN();
 
-  LOG_INFO("RTIMER_SECOND: %u ticks\n", RTIMER_SECOND);
   LOG_INFO("MEASUREMENT_INTERVAL: %u ticks\n", MEASUREMENT_INTERVAL);
   LOG_INFO("DATA_POINTS_PER_TRANSMISSION: %u ticks\n", DATA_POINTS_PER_TRANSMISSION);
 
