@@ -224,7 +224,7 @@ void readSensorValueAndPersist() {
   // Translate angle into acceleration
   double currentAcceleration = calcAccelerationFromAngle(currentMiliseconds, currentAngle);
   // LOG_INFO("Acceleration is (int) %d\n", (int) currentAcceleration);
-  if (currentAcceleration < -990) {
+  if (currentAcceleration < 0) {
     return;
   }
 
